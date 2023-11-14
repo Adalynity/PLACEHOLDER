@@ -2,7 +2,7 @@
     --font: "Amasis MT Std";
 }
 
-
+/* Font Initilizing - including different formats for different systems */
 @font-face {
     font-family:'Amasis MT Std';
     src: url('../Assets/Fonts/AmasisMTStd-Black.eot');
@@ -16,7 +16,6 @@
     font-display: swap;
 }
 
-
 body{
     display: grid;
     grid-template-areas: 
@@ -25,14 +24,23 @@ body{
     "foot foot";
     background-color: #A8A5A4;
     font-family: "Amasis MT Std";
-    
-    
+    left: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+main{
+    display: grid;
+    background-color: black;
+    margin-left: auto;
 }
 
 .introImg{
-    display:block;
-    margin-left: auto;
-    margin-right: auto;
+    display: grid;
+    border-style: dotted;
+    border-radius: 1px;
+    border-color: black;
     
 }
 
@@ -107,4 +115,26 @@ body{
 
 .closebtn{
     background-image: url("../Assets/Images/placeholderImage.png");
+}
+
+@media screen and (max-width: 767px) {   
+    #introImg{
+    	background-image: url("Assets/Images/mainPhoto.jpeg");
+    } 
+}
+
+@media screen and (min-width: 768px) {      
+    #introImg{      
+    	background-image: url("Assets/Images/mainPhoto.jpeg");
+    } 
+} 
+@media (min-width: 992px) {      
+      #introImg{        
+          background-image: url("Assets/Images/mainPhoto.jpeg");
+      } 
+}
+@media (min-width: 1200px) {    
+     #introImg{         
+         background-image: url("Assets/Images/mainPhoto.jpeg");
+     } 
 }
