@@ -1,8 +1,7 @@
-$('textarea').keyup(function(){
+function countCharacters(){
+    var maxLength = 500;
+    var characterCount = document.getElementById('userInput').nodeValue;
 
-    if(this.value.length > 500){
-        return false;
-    }
-
-    $(".charRemaining").html("Remaining characters : " + (500 - this.value.length));
-});​
+    var remainingChars = maxLength - characterCount;
+    document.getElementById('charRemaining').textContent = "Remaining Characters: " + remainingChars;
+}

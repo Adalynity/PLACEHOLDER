@@ -62,17 +62,29 @@ body{
     top: 400px;
 }
 .mainRow {
-    background-color: var(--background);
+    
     display: flex;
 }
 .mainRow .column {
     flex: 33.33%;
     padding: 5px;
+    
 }
+.hair1{
+  border: 10px solid var(--background);
+}
+.hair2{
+  border: 10px solid var(--background);
+}
+.introImg{
+  border: 10px solid var(--background);
+}
+
 
 .socialsRow .column {
     flex: 33.33%;
     padding: 5px;
+    margin-left: -5px;
     
 }
 .card {
@@ -85,6 +97,8 @@ body{
     justify-content: center;
     padding: 25px 25px;
     gap: 20px;
+    
+    
   }
   
   /* for all social containers*/
@@ -97,6 +111,7 @@ body{
     justify-content: center;
     overflow: hidden;
     transition-duration: .3s;
+    
   }
 
   /* instagram*/
@@ -153,6 +168,7 @@ body{
   }
 
 .socialButton{
+  top: 5px;
   float: left;
   width: fit-content;
   position: relative;
@@ -160,7 +176,7 @@ body{
   flex-direction: row;
   padding: 10px 40px;
   font-size: 18px;
-  background-color: #ff9900;
+  background-color: #79a67d;
   color: #fff;
   text-shadow: 0 2px 0 rgb(0 0 0 / 25%);
   display: inline-flex;
@@ -179,7 +195,7 @@ body{
   font-weight: 900;
   transition: all 0.7s cubic-bezier(0,.8,.26,.99);
   width: 320px;
-  top: 5px;
+  
 }
 .socialButton:before{
   position: absolute;
@@ -192,7 +208,7 @@ body{
   content: '';
   transition: .7s cubic-bezier(0,.8,.26,.99);
   z-index: -1;
-  background-color: #ff9900!important;
+  background-color: #79a67d!important;
   box-shadow: 0 -4px rgb(21 108 0 / 50%) inset, 0 4px rgb(100 253 31 / 99%) inset, -4px 0 rgb(100 253 31 / 50%) inset, 4px 0 rgb(21 108 0 / 50%) inset;
 }
 .socialButton:after {
@@ -222,4 +238,52 @@ body{
 .socialButton:active:after {
   box-shadow: 0 0px 0 0 rgb(0 0 0 / 15%);
 }
+.instagramWall{
+  height: auto;
+  width: auto;
+  border: 5px solid var(--background);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: -170px;
+  right: -5px;
+}
 
+.wall-row{
+  display:flex;
+  justify-content: space-between;
+  margin: 5px 5px 5px 5px;
+  
+}
+.wall-row img{
+  max-width: 30%;
+  border: 5px solid var(--background);
+  
+}
+.servicesBox{
+  margin-top: 5px;
+  justify-content: center;
+  
+  position :relative;
+  display: flex;
+  width: 320px;
+  height: auto;
+  border: 1px solid var(--background);
+  top: -600px;
+  
+}
+.serviceTitle{
+  font-size: 24px;
+
+}
+.serviceList{
+  list-style: none;
+  padding: 0;
+}
+.serviceList li{
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+.contact{
+  top: -5px;
+}
