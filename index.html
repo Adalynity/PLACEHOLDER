@@ -1,18 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
-    <style>
-
-        body{
-            font-size: 50px;
-            text-align: center;
-        }
-    </style>
 <head>
+  <script language="javaScript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="Assets/CSS Files/index.css">
+    <script src="Assets/JavaScript Files/indexscrip.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    
+    <title>Main page</title>
 </head>
 <body>
-    WEBSITE WORK IN PROGRESS
+    
+  <div class="navbar" id="navbar">
+    <!-- Desktop Element -->
+    <a class="desktopImg" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+      <img  src="Assets/Images/default_logo.png"id="logo">
+      <img  src="Assets/Images/default_logo_white.png"id="logo2">
+    </a>
+    <!-- <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" id="logo"><span id="initialLetter">R</span>EDS</a> -->
+    <a class="mobileImg" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+      <img  src="Assets/Images/mobileLogo.png"id="logo">
+
+    </a>
+    <!-- Dekstop Element -->
+    <a class="fa fa-map-marker navbarButton locationBtn" id="navbarButton" aria-hidden="true" href="#Location"> Locations</a>
+    <a class="fa fa-scissors navbarButton serviceBtn" id="navbarButton " aria-hidden="true" href="#services"> Services</a>
+    <a class="fa fa-shopping-bag navbarButton shopBtn" id="navbarButton " aria-hidden="true" href="Shop.html"> Shop</a>  
+    <a class="fa fa-mobile navbarButton contactBtn" id="navbarButton " aria-hidden="true" href="contacts.html"> Contact Us</a>
+    <!-- Mobile Element -->
+    <a class="fa fa-map-marker navbarButton locationBtn1" id="navbarButton" aria-hidden="true" href="#Location"></a>
+    <a class="fa fa-scissors navbarButton serviceBtn1" id="navbarButton " aria-hidden="true" href="#services"></a>
+    <a class="fa fa-shopping-bag navbarButton shopBtn1" id="navbarButton " aria-hidden="true" href="Shop.html"></a>  
+    <a class="fa fa-mobile navbarButton contactBtn1" id="navbarButton " aria-hidden="true" href="contacts.html"></a>
+  </div>
+  <main>
+    <div class="Home scrollSnapY">
+      <div class="container">
+          <div class="container2">
+            <div class="grid-container">
+              <p class="intro-desc">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit, iusto. Minima ipsam rerum animi vero, vel placeat explicabo officia voluptas non atque cumque accusantium sint, neque veniam, ullam esse voluptatibus perspiciatis fugiat sequi recusandae. Dicta assumenda illum consequuntur officiis nisi. Sapiente officiis minima dicta laboriosam facere quae earum soluta consectetur et aut fuga, culpa eos voluptatum natus labore nostrum iure, cupiditate eius consequatur dolore! Velit dolorum similique pariatur ipsam possimus? Eligendi odit sint hic? Alias vitae quibusdam at neque blanditiis voluptatibus corrupti adipisci aliquam unde dolore, voluptas consequuntur eos laboriosam quis harum nobis? Tempora, dolore aliquid esse deleniti eaque rem!
+                
+              </p>
+              <div class="images">
+                <img class="column1 image" src="Assets/Images/placeholder.png">
+                <img class="column2 image" src="Assets/Images/placeholder.png">
+              </div>
+              
+            </div>
+          </div>
+          <img class="mainPhoto" src="Assets/Images/mainPhoto.jpeg">
+      </div>
+    </div>
+
+    
+    
+    <div class="Location scrollSnapY">
+      <div class="mainLocationContainer">
+        <div class="mapContainer">
+          <iframe class="desktopmap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2242.980276429914!2d-4.868706822816285!3d55.79358038884911!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4889b8ffeb503b6f%3A0x2552941f680fd74!2sReds%20Hair%20Studio!5e0!3m2!1sen!2suk!4v1707312602121!5m2!1sen!2suk" width="900" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <iframe class="mobilemap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2242.980276429914!2d-4.868706822816285!3d55.79358038884911!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4889b8ffeb503b6f%3A0x2552941f680fd74!2sReds%20Hair%20Studio!5e0!3m2!1sen!2suk!4v1707312602121!5m2!1sen!2suk" width="390" height="390" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="aboutUsContainer">
+          <div class="aboutUs">
+            <p class="aboutUsText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui veritatis animi explicabo, perspiciatis expedita quo inventore porro ipsum vel saepe fugit, nemo quasi, iste atque necessitatibus dicta voluptatum hic adipisci esse illo reprehenderit beatae nostrum. Saepe, fugit maiores facilis aspernatur veritatis molestiae perferendis iste esse nam sit, labore accusantium perspiciatis quibusdam eius quia a minima officiis sint blanditiis atque. Cum perferendis sequi est reprehenderit consectetur excepturi molestias cupiditate laborum tempore perspiciatis temporibus laboriosam ab suscipit, exercitationem odit magni atque vero harum nemo architecto reiciendis iste provident ex ratione! Recusandae voluptate blanditiis odit eveniet, impedit repellat mollitia, laudantium in modi eum excepturi nobis dolor dignissimos? Cumque quos vitae sed minima deleniti repellat minus beatae quis quas qui sint ipsa porro, nobis necessitatibus modi? Pariatur amet totam cupiditate odit cumque, explicabo minima! Inventore aliquam suscipit necessitatibus aut ea deleniti provident ducimus maiores rerum accusantium quae ipsam, quidem dicta labore, voluptatibus laborum, ullam repellat fuga maxime autem tenetur quia dolor ut? Placeat impedit odit cumque doloribus quasi vitae corporis ab ipsam numquam fugiat necessitatibus recusandae nobis omnis inventore animi eos sint repellendus minus accusamus natus, cupiditate distinctio commodi! Exercitationem porro vitae veritatis facere beatae eaque doloribus quo. Fugit neque mollitia ex facilis qui, harum ea maxime vel alias earum impedit similique voluptates officiis recusandae dolore! Voluptate, quae officia commodi molestiae eos id nisi excepturi amet repudiandae ex corporis sunt fugit voluptas consectetur aperiam eligendi nostrum inventore non dolore. Vel maiores et omnis eaque repellendus quae, quod, eligendi, explicabo perferendis veritatis corporis minus! Impedit.</p>
+          </div>
+          <div class="socials">
+            <div class="aboutusContainer2">
+              <div class="socialIconsContainer">
+                <a class="fa fa-facebook-official locationIcon" aria-hidden="true" href="#Facebook"></a>
+                <a class="fa fa-instagram locationIcon" aria-hidden="true" href="#Instagram"></a>
+              </div>
+              <div class="socialDetailsContainer">
+                <p class="socialsphone">0XXXX XXXXXX</p>
+                <p class="socialsemail"><a href="mailto:igneousant@gmail.com">email.placeholder@something.com</a></p>
+            </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div> 
+
+    <div class="Services scrollSnapY">
+      <div class="servicesContainer">
+        <div class="contact-form">
+          <span class="heading">Services</span>
+          <form>
+            <div class="UserInputDetails">
+              <div class="nameEmail">
+                <p class="title">Name: </p>
+                <input style="width: 400px;" type="text" required="" placeholder="Type here...">
+                <p class="title">Date of Appointment: </p>
+                <input style="width: 400px;" type="date" id="date">
+                
+              </div>
+              <div class="serviceDate">
+                <p class="title">Email: </p>
+                <input style="width: 400px;" type="email" id="email" name="email" required="" placeholder="Type here...">
+                <p class="title">Select the Service:</p>
+                <select  style="width: 400px;" id="items">
+                  <option value="service1">Service 1 : £??</option>
+                  <option value="service2">Service 2 : £??</option>
+                  <option value="service3">Service 3 : £??</option>
+                  <option value="service4">Service 4 : £??</option>
+                  <option value="service5">Service 5 : £??</option>
+                  <option value="service6">Service 6 : £??</option>
+                  <option value="service7">Service 7 : £??</option>
+                </select> 
+              </div>
+              
+            </div>
+            <div class="userMessage">
+              <p class="titleMessage">Message
+              </p>
+              <textarea id="messageArea" class="message" name="message" required=""  placeholder="Type here..." width="700" height="300" maxlength="500""></textarea>
+              <p class="counter" id="counter">0/500</p>
+            </div>
+            
+  
+            <button class="submitButton" type="submit">Submit</button>  
+          </form>
+          
+        </div>
+        
+          <div class="serviceImages">
+            <div class="serviceimageFlex1">
+              <div class="imageContainer imagecontainer1">
+                <img class="serviceImage" src="Assets/Images/placeholder.png">
+                <span class="imageDesc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, itaque.</span>
+              </div>
+              
+              <div class="imageContainer imagecontainer2">
+                <img class="serviceImage" src="Assets/Images/placeholder.png">
+                <span class="imageDesc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, itaque.</span>
+              </div>
+            </div>
+            <div class="serviceimageFlex2">
+              <div class="imageContainer imagecontainer1">
+                <img class="serviceImage" src="Assets/Images/placeholder.png">
+                <span class="imageDesc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, itaque.</span>
+              </div>
+              <div class="imageContainer imagecontainer2">
+                <img class="serviceImage" src="Assets/Images/placeholder.png">
+                <span class="imageDesc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, itaque.</span>
+              </div>
+            </div>
+            <div class="serviceimageFlex2">
+              <div class="imageContainer imagecontainer1">
+                <img class="serviceImage" src="Assets/Images/placeholder.png">
+                <span class="imageDesc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, itaque.</span>
+              </div>
+              <div class="imageContainer imagecontainer2">
+                <img class="serviceImage" src="Assets/Images/placeholder.png">
+                <span class="imageDesc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, itaque.</span>
+              </div>
+            </div>
+          </div>
+        
+        
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="footer-container">
+      <div class="socials-container">
+        <a class="fa fa-facebook-official" aria-hidden="true" href="#Facebook"></a>
+       <!-- <a class="fa fa-twitter" aria-hidden="true" href="#Twitter"></a>
+        <a class="fa fa-linkedin-square" aria-hidden="true" href="#Linkedin"></a> -->
+        <a class="fa fa-instagram" aria-hidden="true" href="#Instagram"></a>
+        
+      </div>
+      <div class="links-container">
+        <a class="" aria-hidden="true" href="#Home">Home</a>
+        <a class="" aria-hidden="true" href="#Contacts">About</a>
+        <a class="" aria-hidden="true" href="#Team">Team</a>
+        <a class="" aria-hidden="true" href="#Contact">Contact Us</a>
+      </div>
+      <div class="copyright" >
+        <p class="fa fa-copyright copyrightText" aria-hidden="true" >2024 Adalyn Taylor | Darius Takacs</p>
+      </div>
+      
+    </div> 
+  </footer>
+
+
 </body>
 </html>

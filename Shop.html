@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Assets/CSS Files/shopstyles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>RED's Shop</title>
+   
+</head>
+<body>
+    <div class="navbar" id="navbar">
+        <a href="index.html">
+            <img  src="Assets/Images/default_logo.png"id="logo">
+            <img  src="Assets/Images/default_logo_white.png"id="logo2">
+        </a>
+        
+        
+        <a class="fa fa-map-marker navbarButton" id="navbarButton" aria-hidden="true" href="#Location"> Locations</a>
+        <a class="fa fa-scissors navbarButton" id="navbarButton" aria-hidden="true" href="#services"> Services</a>
+    </div>
+    
+    <div class="navigationContainer">
+        <hr class="decorativeLine">
+        <form class="searchBar" action="/search_results">
+            <button class="search" type="submit"><i class="fa fa-search"></i></button>
+            <input type="text" placeholder="Search..">
+            
+            <button class="clear" type="submit">Clear</button>
+            
+        </form>
+        <div class="cartContainer">
+            <button>
+                <span class="cartText">Cart</span>
+                <span class="cartNum">0</span>
+            </button>
+        </div>
+    </div>
+    <main>
+        <div class="shoppingContainer" data-card-container>
+
+        </div>
+        <template id="dataTemplate">
+            <div class="card">
+                <div class="descButtonContainer">
+                    <img class="serviceImage" data-image src="">
+                    <div class="productTitle" data-title></div>
+                    <div class="productPrice" data-price></div>
+                    <div class="productDesc" data-desc></div>
+                        
+                    
+                    <button class="shoppingbutton">
+                        <span>Add To Cart</span>
+                    </button>
+                </div>
+            </div>
+        </template>
+        
+    </main>
+    
+    <footer>
+        <div class="footer-container">
+          <div class="socials-container">
+            <a class="fa fa-facebook-official" aria-hidden="true" href="#Facebook"></a>
+           <!-- <a class="fa fa-twitter" aria-hidden="true" href="#Twitter"></a>
+            <a class="fa fa-linkedin-square" aria-hidden="true" href="#Linkedin"></a> -->
+            <a class="fa fa-instagram" aria-hidden="true" href="#Instagram"></a>
+            
+          </div>
+          <div class="links-container">
+            <a class="" aria-hidden="true" href="#Home">Home</a>
+            <a class="" aria-hidden="true" href="#Contacts">About</a>
+            <a class="" aria-hidden="true" href="#Team">Team</a>
+            <a class="" aria-hidden="true" href="#Contact">Contact Us</a>
+          </div>
+          <div class="copyright" >
+            <p class="fa fa-copyright copyrightText" aria-hidden="true" >2024 Adalyn Taylor | Darius Takacs</p>
+          </div>
+          
+        </div> 
+      </footer>
+</body>
+<script src="Assets/JavaScript Files/shopScript.js">
+    
+</script>
+</html>

@@ -1,0 +1,205 @@
+/* Beginning of Navbar */
+body{
+  width: auto;
+  height: auto;
+}
+#navbar{
+  position: relative;
+  text-align: center;
+  justify-content: center;
+  overflow: hidden;
+  background: rgb(2,0,36);
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 65%, rgba(255,0,0,1) 100%);
+  font-size: 30px;
+  
+  
+}
+
+
+#navbar #logo{
+  position: absolute;
+  opacity: 1;
+  padding: 5px;
+  text-align: center;
+  padding-bottom: 100px;
+  color: red;
+  text-decoration: underline;
+  right: 900px;
+}
+#navbar #logo2{
+  position: absolute;
+  opacity: 0;
+  padding: 5px;
+  color: red;
+  text-decoration: underline;
+  right: 900px;
+
+}
+
+#navbar #logo:hover{
+  opacity: 0;
+}
+#navbar #logo2:hover{
+  opacity: 1;
+  
+}
+#navbar .navbarButton{
+  position: relative;
+  top: 15px;
+  margin-top: 60px;
+  margin-bottom: 25px;
+  display: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
+}
+#navbarButton:hover {
+  color: red;
+ 
+}
+/* End of Navbar */
+/* beginning of searchBar */
+.decorativeLine{
+  height: 15px;
+  width: 1398px;
+  right: 6px;
+  top: 25px;  
+  position: relative;
+  margin: 0 auto;
+
+  background-color: red;;
+}
+.navigationContainer{
+  position: relative;
+  justify-content: center;
+  
+  
+}
+.searchBar{
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  position: relative;
+  width: 250px;
+  height: auto;
+  top: 45px;
+  margin: 0 auto;
+  right: 581px;
+}
+.searchBar .search{
+  cursor: pointer;
+  position: relative;
+  height: 35px;
+  width: 35px;
+  top: 1px;
+}
+.searchBar .clear{
+  cursor: pointer;
+  height: 35px;
+  width: 70px;
+  position: relative;
+  top: 1px;
+}
+
+
+.searchBar input{
+  position: relative;
+  height: 29px;
+  width: 200px;
+  top: 1px;
+  font-size: 15px;
+}
+.searchBar .cartcontainer{
+  position: relative;
+  width: 10px;
+  height: auto;
+  margin: 0 auto;
+}
+/* end of searchBar */
+
+/* Beginning of Main */
+
+.shoppingContainer{
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(100px, 1fr));
+  
+  top: 75 px;
+  
+  
+}
+.card{
+  width: 275px;
+  justify-content: center;
+  text-align: center;
+  border: solid black 1px;
+}
+
+.descButtonContainer .shoppingbutton{
+  height: 35px;
+  border: 1px solid black;
+  
+}
+.descButtonContainer .shoppingbutton:hover{
+  
+  background-color: #F01400;
+  cursor: pointer;
+}
+/* begin of button anim*/
+.shoppingbutton span{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    font-size: 20px;
+    transition: 0.5s;
+}
+.shoppingbutton span:after {
+  font-family: "FontAwesome";
+  font-size: 20px;
+  text-decoration: bold;
+  content: '\f07a';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+.shoppingbutton:hover span {
+    padding-right: 25px;
+}
+.shoppingbutton:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+  
+/* end of button anim*/
+
+
+.footer-container{
+  text-align: center;
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 65%, rgba(255,0,0,1) 100%);
+  height: 100%;
+  overflow: auto;
+}
+
+.socials-container{
+  font-size: 35px;
+}
+.socials-container a{
+  color: white;
+}
+.links-container a{
+  color: white;
+}
+.socials-container a:hover{
+  color: red;
+}
+.links-container a:hover{
+  color: red;
+}
+.copyrightText{
+  color: white;
+}
