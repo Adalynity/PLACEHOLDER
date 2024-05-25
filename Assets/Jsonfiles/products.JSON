@@ -1,0 +1,45 @@
+[
+    {
+        "image": "../Images/placeholder.png",
+        "title": "Shampoo" ,
+        "price": "£5.00",
+        "description": "It washes your hair"
+    },
+    {
+        "image": "../Images/placeholder.png",
+        "title": "Conditioner" ,
+        "price": "£5.00",
+        "description": "It washes your hair"
+    },
+    {
+        "image": "../Images/placeholder.png",
+        "title": "Red Dye" ,
+        "price": "£5.00",
+        "description": "It washes your hair"
+    },
+    {
+        "image": "../Images/placeholder.png",
+        "title": "Blue Dye" ,
+        "price": "£5.00",
+        "description": "It washes your hair"
+    },
+    {
+        "image": "../Images/placeholder.png",
+        "title": "Aftershave" ,
+        "price": "£5.00",
+        "description": "It washes your hair"
+    },
+    {
+        "image": "../Images/placeholder.png",
+        "title": "Poop water" ,
+        "price": "£5.00",
+        "description": "It washes your hair"
+    },
+    {
+        "image": "../Images/placeholder.png",
+        "title": "Shampoo" ,
+        "price": "£5.00",
+        "description": "It washes your hair"
+    }
+
+]
