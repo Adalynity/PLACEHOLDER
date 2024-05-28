@@ -1,87 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Page</title>
     <link rel="stylesheet" href="Assets/CSS Files/shopstyles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>RED's Shop</title>
-   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
-    <div class="navbar" id="navbar">
-        <a href="index.html">
-            <img  src="Assets/Images/default_logo.png"id="logo">
-            <img  src="Assets/Images/default_logo_white.png"id="logo2">
-        </a>
-        
-        
-        <a class="fa fa-map-marker navbarButton" id="navbarButton" aria-hidden="true" href="#Location"> Locations</a>
-        <a class="fa fa-scissors navbarButton" id="navbarButton" aria-hidden="true" href="#services"> Services</a>
-    </div>
-    
-    <div class="navigationContainer">
-        <hr class="decorativeLine">
-        <form class="searchBar" action="/search_results">
-            <button class="search" type="submit"><i class="fa fa-search"></i></button>
-            <input type="text" placeholder="Search..">
-            
-            <button class="clear" type="submit">Clear</button>
-            
-        </form>
-        <div class="cartContainer">
-            <button>
-                <span class="cartText">Cart</span>
-                <span class="cartNum">0</span>
-            </button>
+    <header>
+        <h1>Shop with Us</h1>
+        <div class="search-container">
+            <input type="text" id="search" placeholder="Search for products...">
+            <button id="clear-btn">Clear</button>
         </div>
-    </div>
-    <main>
-        <div class="shoppingContainer" data-card-container>
-
-        </div>
-        <template id="dataTemplate">
-            <div class="card">
-                <div class="descButtonContainer">
-                    <img class="serviceImage" data-image src="">
-                    <div class="productTitle" data-title></div>
-                    <div class="productPrice" data-price></div>
-                    <div class="productDesc" data-desc></div>
-                        
-                    
-                    <button class="shoppingbutton">
-                        <span>Add To Cart</span>
-                    </button>
-                </div>
+        <div class="cart-container">
+            <button id="cart-btn"><i class="fas fa-shopping-cart"></i> Cart (<span id="cart-count">0</span>)</button>
+            <div id="cart" class="cart">
+                <h2>Your Cart</h2>
+                <ul id="cart-items"></ul>
+                <p>Total: £<span id="cart-total">0.00</span></p>
+                <button id="checkout-btn">Checkout</button>
             </div>
-        </template>
-        
-    </main>
-    
-    <footer>
-        <div class="footer-container">
-          <div class="socials-container">
-            <a class="fa fa-facebook-official" aria-hidden="true" href="#Facebook"></a>
-           <!-- <a class="fa fa-twitter" aria-hidden="true" href="#Twitter"></a>
-            <a class="fa fa-linkedin-square" aria-hidden="true" href="#Linkedin"></a> -->
-            <a class="fa fa-instagram" aria-hidden="true" href="#Instagram"></a>
+        </div>
+    </header>
+    <main>
+        <!-- For the search function to work - Please change what is located in "data-name" to whatever the product is, as the search function looks at this for searching  -->
+        <!-- Please change "Data-price" to this format  "£0.00" only use two or more digits at the front if the price is actually that so for example "£10.20" due to it sometimes giving £NaN response in the cart.-->
+        <div class="product-list flex-start" id="product-list">
+            <div class="product" data-name="Shampoo" data-details="A placeholder for: placeholder placeholder placeholder placeholder placeholder placeholder" data-price="00.01">
+                <img src="Assets/Images/placeholder.png" alt="Shampoo">
+                <h2>Shampoo</h2>
+                <p>£00.01</p>
+                
+            </div>
+        <div class="product-list" id="product-list">
+            <div class="product" data-name="Conditioner" data-details="A placeholder for: placeholder placeholder placeholder placeholder placeholder placeholder" data-price="00.01">
+                <img src="Assets/Images/placeholder.png" alt="Conditioner">
+                <h2>Placeholder</h2>
+                <p>£00.01</p>
+                
+        </div>
+        <div class="product-list" id="product-list">
+            <div class="product" data-name="Placeholder" data-details="A placeholder for: placeholder placeholder placeholder placeholder placeholder placeholder" data-price="00.01">
+                <img src="Assets/Images/placeholder.png" alt="Placeholder">
+                <h2>Placeholder</h2>
+                <p>£00.01</p>
+                
+        </div>
+        <div class="product-list" id="product-list">
+            <div class="product" data-name="Placeholder" data-details="A placeholder for: placeholder placeholder placeholder placeholder placeholder placeholder" data-price="00.01">
+                <img src="Assets/Images/placeholder.png" alt="Placeholder">
+                <h2>Placeholder</h2>
+                <p>£00.01</p>
+                
+        </div>
+        <div class="product-list" id="product-list">
+            <div class="product" data-name="Placeholder" data-details="A placeholder for: placeholder placeholder placeholder placeholder placeholder placeholder" data-price="00.01">
+                <img src="Assets/Images/placeholder.png" alt="Placeholder">
+                <h2>Placeholder</h2>
+                <p>£00.01</p>
+                
+        </div>
+        <div class="product-list" id="product-list">
+            <div class="product" data-name="Placeholder" data-details="A placeholder for: placeholder placeholder placeholder placeholder placeholder placeholder" data-price="00.01">
+                <img src="Assets/Images/placeholder.png" alt="Placeholder">
+                <h2>Placeholder</h2>
+                <p>£00.01</p>
+                
+        </div>
+        <div class="product-list" id="product-list">
+            <div class="product" data-name="Placeholder" data-details="A placeholder for: placeholder placeholder placeholder placeholder placeholder placeholder" data-price="00.01">
+                <img src="Assets/Images/placeholder.png" alt="Placeholder">
+                <h2>Placeholder</h2>
+                <p>£00.01</p>
+                
+        </div>
+        <!-- Dont add more than this - Trying to fix a bug (Cannot Figure it out yet) -->
+        <div class="product-list" id="product-list">
+            <div class="product" data-name="Placeholder" data-details="A placeholder for: placeholder placeholder placeholder placeholder placeholder placeholder" data-price="00.01">
+                <img src="Assets/Images/placeholder.png" alt="Placeholder">
+                <h2>Placeholder</h2>
+                <p>£00.01</p>
+                
+        </div>
+        <div class="product-list" id="product-list">
+            <div class="product" data-name="Placeholder" data-details="A placeholder for: placeholder placeholder placeholder placeholder placeholder placeholder" data-price="00.01">
+                <img src="Assets/Images/placeholder.png" alt="Placeholder">
+                <h2>Placeholder</h2>
+                <p>£00.01</p>
+                
+        </div>
             
-          </div>
-          <div class="links-container">
-            <a class="" aria-hidden="true" href="#Home">Home</a>
-            <a class="" aria-hidden="true" href="#Contacts">About</a>
-            <a class="" aria-hidden="true" href="#Team">Team</a>
-            <a class="" aria-hidden="true" href="#Contact">Contact Us</a>
-          </div>
-          <div class="copyright" >
-            <p class="fa fa-copyright copyrightText" aria-hidden="true" >2024 Adalyn Taylor | Darius Takacs</p>
-          </div>
-          
-        </div> 
-      </footer>
+
+            
+            
+            
+            <!-- Additional products can be added here -->
+        </div>
+    </main>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img id="modal-img" src="" alt="Product Image">
+            <h2 id="modal-name"></h2>
+            <p id="modal-details"></p>
+            <p id="modal-price"></p>
+            <button id="modal-add-to-cart-btn">Add to Cart</button>
+        </div>
+    </div>
+
+    <script src="Assets/JavaScript Files/shopScript.js"></script>
 </body>
-<script src="Assets/JavaScript Files/shopScript.js">
-    
-</script>
 </html>

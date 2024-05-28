@@ -292,6 +292,7 @@
     position: relative;
     display: flex;
     text-align: center;
+    
   }
 
   .serviceImages .imageDesc{
@@ -315,13 +316,14 @@
   .imageContainer{
     display: block;
     box-shadow: 5px 4px 0 2px  red, 6px 5px 5px 4px black;
+    top: 100px;
     width: 273px;
   }
   .imagecontainer2{
     position: relative;
     top: 25px
   }
-/* .submitButton{
+  .submitButton{
     position: relative;
     float: right;
     left: 908px;
@@ -334,9 +336,11 @@
     color: black;
     
     text-align: center;
-    
-    
-} */
+    z-index:99999999999!important;
+  }
+  .submitButton:hover{
+    cursor: pointer;
+  }
 
   /* End of Service section */
 

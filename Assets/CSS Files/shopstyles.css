@@ -1,205 +1,197 @@
-/* Beginning of Navbar */
-body{
-  width: auto;
-  height: auto;
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-#navbar{
-  position: relative;
-  text-align: center;
-  justify-content: center;
-  overflow: hidden;
+
+header {
   background: rgb(2,0,36);
   background: rgb(2,0,36);
   background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 65%, rgba(255,0,0,1) 100%);
-  font-size: 30px;
-  
-  
-}
-
-
-#navbar #logo{
-  position: absolute;
-  opacity: 1;
-  padding: 5px;
+  color: white;
+  padding: 1rem;
   text-align: center;
-  padding-bottom: 100px;
-  color: red;
-  text-decoration: underline;
-  right: 900px;
 }
-#navbar #logo2{
+
+.search-container {
+  position: relative;
+  display: inline-block;
+  width: 80%;
+  max-width: 500px;
+  margin-top: 1rem;
+}
+
+header input {
+  padding: 0.5rem;
+  width: 100%;
+  padding-right: 2.5rem; /* Space for the clear button */
+}
+
+#clear-btn {
   position: absolute;
-  opacity: 0;
-  padding: 5px;
-  color: red;
-  text-decoration: underline;
-  right: 900px;
-
-}
-
-#navbar #logo:hover{
-  opacity: 0;
-}
-#navbar #logo2:hover{
-  opacity: 1;
-  
-}
-#navbar .navbarButton{
-  position: relative;
-  top: 15px;
-  margin-top: 60px;
-  margin-bottom: 25px;
-  display: left;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 15px;
-  text-decoration: none;
-}
-#navbarButton:hover {
-  color: red;
- 
-}
-/* End of Navbar */
-/* beginning of searchBar */
-.decorativeLine{
-  height: 15px;
-  width: 1398px;
-  right: 6px;
-  top: 25px;  
-  position: relative;
-  margin: 0 auto;
-
-  background-color: red;;
-}
-.navigationContainer{
-  position: relative;
-  justify-content: center;
-  
-  
-}
-.searchBar{
-  display: flex;
-  flex-direction: row;
-  gap: 5px;
-  position: relative;
-  width: 250px;
-  height: auto;
-  top: 45px;
-  margin: 0 auto;
-  right: 581px;
-}
-.searchBar .search{
+  top: 50%;
+  right: -3rem;
+  transform: translateY(-50%);
+  border: 1px black solid;
+  background: none;
+  color: black;
   cursor: pointer;
-  position: relative;
-  height: 35px;
-  width: 35px;
-  top: 1px;
+  font-size: 1.2rem;
 }
-.searchBar .clear{
+#clear-btn:hover{
+  box-shadow: 2px 2px 5px px rgba(0, 0, 0, 0.5);
+}
+
+.cart-container {
+  position: relative;
+  display: inline-block;
+  margin-top: 1rem;
+  left: 630px;
+}
+
+#cart-btn {
+  
+  position: relative;
+  border: none;
+  background: none;
+  color: white;
   cursor: pointer;
-  height: 35px;
-  width: 70px;
-  position: relative;
-  top: 1px;
+  font-size: 1.2rem;
 }
 
-
-.searchBar input{
-  position: relative;
-  height: 29px;
-  width: 200px;
-  top: 1px;
-  font-size: 15px;
-}
-.searchBar .cartcontainer{
-  position: relative;
-  width: 10px;
-  height: auto;
-  margin: 0 auto;
-}
-/* end of searchBar */
-
-/* Beginning of Main */
-
-.shoppingContainer{
-  position: relative;
-  display: grid;
-  grid-template-columns: repeat(4, minmax(100px, 1fr));
-  
-  top: 75 px;
-  
-  
-}
-.card{
-  width: 275px;
-  justify-content: center;
-  text-align: center;
-  border: solid black 1px;
-}
-
-.descButtonContainer .shoppingbutton{
-  height: 35px;
-  border: 1px solid black;
-  
-}
-.descButtonContainer .shoppingbutton:hover{
-  
-  background-color: #F01400;
-  cursor: pointer;
-}
-/* begin of button anim*/
-.shoppingbutton span{
-    cursor: pointer;
-    display: inline-block;
-    position: relative;
-    font-size: 20px;
-    transition: 0.5s;
-}
-.shoppingbutton span:after {
-  font-family: "FontAwesome";
-  font-size: 20px;
-  text-decoration: bold;
-  content: '\f07a';
+.cart {
+  display: none;
   position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -20px;
-  transition: 0.5s;
-}
-.shoppingbutton:hover span {
-    padding-right: 25px;
-}
-.shoppingbutton:hover span:after {
-  opacity: 1;
   right: 0;
+  background-color: white;
+  color: black;
+  border: 1px solid #ccc;
+  width: 300px;
+  padding: 1rem;
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
 }
-  
-/* end of button anim*/
 
+.cart h2 {
+  margin-top: 0;
+}
 
-.footer-container{
+.cart ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.cart ul li {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.cart ul li button {
+  border: none;
+  background: none;
+  color: red;
+  cursor: pointer;
+}
+
+main {
+  padding: 2rem;
+}
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.product {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  border-radius: 5px;
   text-align: center;
-  background: rgb(2,0,36);
-  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 65%, rgba(255,0,0,1) 100%);
+  width: 200px;
+  cursor: pointer;
+}
+
+.product img {
+  max-width: 100%;
+  height: auto;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 1rem;
+}
+
+.product h2 {
+  margin: 0.5rem 0;
+}
+
+.add-to-cart-btn {
+  position: relative;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
   height: 100%;
   overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+  padding-top: 60px;
 }
 
-.socials-container{
-  font-size: 35px;
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
 }
-.socials-container a{
+
+.modal-content img {
+  max-width: 100%;
+  height: auto;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#modal-add-to-cart-btn {
+  background-color: #28a745;
   color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 5px;
 }
-.links-container a{
-  color: white;
-}
-.socials-container a:hover{
-  color: red;
-}
-.links-container a:hover{
-  color: red;
-}
-.copyrightText{
-  color: white;
+
+@media screen and (max-width: 481px){
+  .cart-container {
+    position: relative;
+    display: inline-block;
+    margin-top: 1rem;
+    right: 10px;
+  }
 }
