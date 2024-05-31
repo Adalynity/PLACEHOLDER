@@ -8,8 +8,8 @@
   --accent-color: #fff;
   --gradient-color: #FBFBFB;
   --background: beige;
-  --bodybackground: #646464;
-  --font: "Amasis MT Std";
+  --bodybackground: #B5B5B5;
+  --font: "Montserrat";
 }
 
 @media(max-width: 1920px) {
@@ -31,6 +31,7 @@
   }
   body{
     background-color: var(--bodybackground);
+    font-family: "Montserrat", sans-serif;
     font-size: 19px;
     display: flex;
     flex-direction: column;
@@ -58,7 +59,7 @@
     
     padding: 5px;
     float: left;
-    color: red;
+    color: #C20D0D;
     text-decoration: underline;
   }
   #navbar #logo2{
@@ -66,7 +67,7 @@
     opacity: 0;
     padding: 5px;
     float: left;
-    color: red;
+    color: #C20D0D;
     text-decoration: underline;
     left: 0px;
   }
@@ -87,7 +88,7 @@
     text-decoration: none;
   }
   #navbarButton:hover {
-    color: red;
+    color: #C20D0D;
   }
 
   /* End of Navbar */
@@ -115,7 +116,7 @@
     top: -6px;
     margin-right: 15px;
     
-    box-shadow:5px 4px 0 2px  red, 6px 5px 5px 4px black;
+    box-shadow:5px 4px 0 2px  #C20D0D, 6px 5px 5px 4px black;
     
   }
   .grid-container{
@@ -136,20 +137,20 @@
   .grid-container .image{
     position: relative;
     width: auto;
-    box-shadow:5px 4px 0 2px  red, 6px 5px 5px 4px black;
+    box-shadow:5px 4px 0 2px  #C20D0D, 6px 5px 5px 4px black;
     
     margin-left: 15px;
   }
   .intro-desc{
     background:white;
-    font-size: 28.8px;
+    font-size: 23px;
     margin-left: 20px;
     height:442px;
-    box-shadow:5px 4px 0 2px  red, 6px 5px 5px 4px black;
+    box-shadow:5px 4px 0 2px  #C20D0D, 6px 5px 5px 4px black;
   }
   .column1{
     position: relative;
-    /* box-shadow:5px 4px 0 2px  red, 6px 5px 5px 4px black;*/
+    /* box-shadow:5px 4px 0 2px  #C20D0D, 6px 5px 5px 4px black;*/
   
     height: auto;
     flex: 50%;
@@ -178,7 +179,7 @@
     position: relative;
     
     margin-left: 20px;
-    box-shadow:5px 4px 0 2px  red, 6px 5px 5px 4px black;
+    box-shadow:5px 4px 0 2px  #C20D0D, 6px 5px 5px 4px black;
   }
 
   .mainLocationContainer{
@@ -197,15 +198,16 @@
   .aboutUs{
     background-color: white;
     display: inline-block;
-    box-shadow:5px 4px 0 2px  red, 6px 5px 5px 4px black;
-    height: 400px;
+    box-shadow:5px 4px 0 2px  #C20D0D, 6px 5px 5px 4px black;
+    height: auto;
     
   }
+  
   .aboutusContainer2{
     margin-top: 25px;
     background-color: white;
     display: flex;
-    box-shadow:5px 4px 0 2px  red, 6px 5px 5px 4px black;
+    box-shadow:5px 4px 0 2px  #C20D0D, 6px 5px 5px 4px black;
     height: 75px;
     text-align: center;
   }
@@ -223,6 +225,24 @@
   .locationIcon{
     scale: 180%;
     padding: 10px;
+    color: black;
+  }
+  .locationIcon:hover{
+    color: red;
+  }
+
+  .desctime{
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .openingTimes{
+    text-align: center;
+    height: auto;
+    box-shadow:5px 4px 0 2px  #C20D0D, 6px 5px 5px 4px black;
+    background: white;
+    margin-right: 25px;
+    width: 425px;
   }
 
   /* End of Location Section */
@@ -241,7 +261,7 @@
   }
   .UserInputDetails{
     background-color: white;
-    box-shadow:5px 4px 0 2px  red, 6px 5px 5px 4px black;
+    box-shadow:5px 4px 0 2px  #C20D0D, 6px 5px 5px 4px black;
     flex: 50%;
     display: flex;
     margin-left: 20px;
@@ -251,7 +271,7 @@
   .userMessage{
     position: relative;
     background-color: white;
-    box-shadow:5px 4px 0 2px  red, 6px 5px 5px 4px black;
+    box-shadow:5px 4px 0 2px  #C20D0D, 6px 5px 5px 4px black;
     flex: 50%;
     margin-top: 10px;
     left: 20px;
@@ -315,7 +335,7 @@
   }
   .imageContainer{
     display: block;
-    box-shadow: 5px 4px 0 2px  red, 6px 5px 5px 4px black;
+    box-shadow: 5px 4px 0 2px  #C20D0D, 6px 5px 5px 4px black;
     top: 100px;
     width: 273px;
   }
@@ -331,16 +351,22 @@
     width: 908px;
     height: 80px;
     background-color: white;
-    box-shadow: 5px 4px 0 2px  red, 6px 5px 5px 4px black;
+    box-shadow: 5px 4px 0 2px  #C20D0D, 6px 5px 5px 4px black;
     border: none;
     color: black;
-    
+    cursor: pointer;
     text-align: center;
     z-index:99999999999!important;
+    font-size: 25px;
   }
-  .submitButton:hover{
-    cursor: pointer;
+  .socialsemail{
+    font-size: 25px;
+    color: black;
   }
+  .socialsemail:hover{
+    color:red;
+  }
+  
 
   /* End of Service section */
 
@@ -365,10 +391,10 @@
     color: white;
   }
   .socials-container a:hover{
-    color: red;
+    color: #C20D0D;
   }
   .links-container a:hover{
-    color: red;
+    color: #C20D0D;
   }
   .copyrightText{
     color: white;
@@ -426,7 +452,7 @@
     font-size: 40px;
     padding: 5px;
     float: left;
-    color: red;
+    color: #C20D0D;
     text-decoration: underline;
   
   }
@@ -486,7 +512,7 @@
    
   }
   #navbarButton:hover {
-    color: red;
+    color: #C20D0D;
    
   }
   main{
@@ -512,7 +538,7 @@
     scale: 95%;
     top: -600px;
     left: 9px;
-    box-shadow:5px 4px 0 2px  red, 6px 5px 5px 4px black;
+    box-shadow:5px 4px 0 2px  #C20D0D, 6px 5px 5px 4px black;
   }
   .grid-container{
     position: relative;
@@ -528,12 +554,12 @@
     background:white;
     font-size: 25px;
     top: 310px;
-    box-shadow:5px 4px 0 2px  red, 6px 5px 5px 4px black;
+    box-shadow:5px 4px 0 2px  #C20D0D, 6px 5px 5px 4px black;
     height: 620px;
   }
   .column1{
     position: relative;
-    /* box-shadow:5px 4px 0 2px  red, 6px 5px 5px 4px black;*/
+    /* box-shadow:5px 4px 0 2px  #C20D0D, 6px 5px 5px 4px black;*/
   
     height: auto;
     flex: 50%;
@@ -556,7 +582,7 @@
   .mobilemap{
     position: relative;
     left: 20px;
-    box-shadow:5px 4px 0 2px  red, 6px 5px 5px 4px black;
+    box-shadow:5px 4px 0 2px  #C20D0D, 6px 5px 5px 4px black;
   }
   
   .socials-container{
@@ -569,10 +595,10 @@
     color: white;
   }
   .socials-container a:hover{
-    color: red;
+    color: #C20D0D;
   }
   .links-container a:hover{
-    color: red;
+    color: #C20D0D;
   }
   .copyrightText{
     color: white;
@@ -598,7 +624,7 @@
     background-color: white;
     
     display: inline-block;
-    box-shadow:5px 4px 0 2px  red, 6px 5px 5px 4px black;
+    box-shadow:5px 4px 0 2px  #C20D0D, 6px 5px 5px 4px black;
     width: 390px;
     left: 20px;
     height: 900px;
@@ -609,7 +635,7 @@
     
     background-color: white;
     display: flex;
-    box-shadow:5px 4px 0 2px  red, 6px 5px 5px 4px black;
+    box-shadow:5px 4px 0 2px  #C20D0D, 6px 5px 5px 4px black;
     height: 75px;
     text-align: center;
     width: 390px;

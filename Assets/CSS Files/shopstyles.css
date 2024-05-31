@@ -22,6 +22,7 @@ header {
   margin-top: 1rem;
 }
 
+
 header input {
   padding: 0.5rem;
   width: 100%;
@@ -100,7 +101,7 @@ main {
 
 .product-list {
   display: flex;
-  flex-wrap: wrap-reverse;
+  flex-wrap: wrap;
   gap: 1rem;
   justify-content: center;
 }
@@ -113,7 +114,6 @@ main {
   width: 200px;
   cursor: pointer;
 }
-
 .product img {
   max-width: 100%;
   height: auto;
@@ -193,5 +193,35 @@ main {
     display: inline-block;
     margin-top: 1rem;
     right: 10px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .product-list {
+      justify-content: flex-start;
+  }
+}
+
+@media (max-width: 992px) {
+  .product-list {
+      justify-content: flex-start;
+  }
+}
+
+@media (max-width: 768px) {
+  .product-list {
+      justify-content: flex-start;
+  }
+}
+
+@media (max-width: 576px) {
+  .product-list {
+      justify-content: flex-start;
+  }
+}
+
+@media (max-width: 400px) {
+  .product-list {
+      justify-content: flex-start;
   }
 }
