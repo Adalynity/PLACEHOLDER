@@ -8,7 +8,21 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
+    
     <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="Assets/Images/default_logo.png">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#locations"><i class="fas fa-map-marker-alt"></i> Locations</a></li>
+                <li><a href="#services"><i class="fas fa-concierge-bell"></i> Services</a></li>
+                <li><a href="#shop"><i class="fas fa-shopping-cart"></i> Shop</a></li>
+                <li><a href="#contact"><i class="fas fa-envelope"></i> Contact Us</a></li>
+            </ul>
+            <div class="hamburger"><i class="fas fa-bars"></i></div>
+        </nav>
+        
         <h1>Shop with Us</h1>
         <div class="search-container">
             <input type="text" id="search" placeholder="Search for products...">
@@ -27,82 +41,141 @@
     <main>
         <!-- For the search function to work - Please change what is located in "data-name" to whatever the product is, as the search function looks at this for searching  -->
         <!-- Please change "Data-price" to this format  "£0.00" only use two or more digits at the front if the price is actually that so for example "£10.20" due to it sometimes giving £NaN response in the cart.-->
+       
+       <!-- ALL IMAGES USED A PLACEHOLDERS AND WERE NOT CHECKED FOR COPYRIGHT SO PLEASE DONT USE IN OFFICIAL WEBSITE -->
         <div class="product-list flex-start" id="product-list">
+            <div class="product" data-name="Shampoo" data-details="A placeholder for: placeholder placeholder placeholder placeholder placeholder placeholder" data-price="00.01">
+                <img src="Assets/Images/shampooPlaceholder.jfif" alt="Shampoo">
+                <h2>Shampoo</h2>
+                <p>£00.01</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half"></i>
+                </div>
+                
+            </div>
+            <div class="product" data-name="Condioner" data-details="A placeholder for: placeholder placeholder placeholder placeholder placeholder placeholder" data-price="00.01">
+                <img src="Assets/Images/condionerPlaceholder.jpeg" alt="Condioner">
+                <h2>Shampoo<br>+<br>Conditioner</h2>
+                <p>£00.01</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half"></i>
+                </div>
+                
+            </div>
             <div class="product" data-name="Shampoo" data-details="A placeholder for: placeholder placeholder placeholder placeholder placeholder placeholder" data-price="00.01">
                 <img src="Assets/Images/placeholder.png" alt="Shampoo">
                 <h2>Shampoo</h2>
                 <p>£00.01</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half"></i>
+                </div>
                 
             </div>
-        <div class="product-list" id="product-list">
-            <div class="product" data-name="Conditioner" data-details="A placeholder for: placeholder placeholder placeholder placeholder placeholder placeholder" data-price="00.01">
-                <img src="Assets/Images/placeholder.png" alt="Conditioner">
-                <h2>Placeholder</h2>
+            <div class="product" data-name="Shampoo" data-details="A placeholder for: placeholder placeholder placeholder placeholder placeholder placeholder" data-price="00.01">
+                <img src="Assets/Images/placeholder.png" alt="Shampoo">
+                <h2>Shampoo</h2>
                 <p>£00.01</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half"></i>
+                </div>
                 
-        </div>
-        <div class="product-list" id="product-list">
-            <div class="product" data-name="Placeholder" data-details="A placeholder for: placeholder placeholder placeholder placeholder placeholder placeholder" data-price="00.01">
-                <img src="Assets/Images/placeholder.png" alt="Placeholder">
-                <h2>Placeholder</h2>
+            </div>
+            <div class="product" data-name="Shampoo" data-details="A placeholder for: placeholder placeholder placeholder placeholder placeholder placeholder" data-price="00.01">
+                <img src="Assets/Images/placeholder.png" alt="Shampoo">
+                <h2>Shampoo</h2>
                 <p>£00.01</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half"></i>
+                </div>
                 
-        </div>
-        <div class="product-list" id="product-list">
-            <div class="product" data-name="Placeholder" data-details="A placeholder for: placeholder placeholder placeholder placeholder placeholder placeholder" data-price="00.01">
-                <img src="Assets/Images/placeholder.png" alt="Placeholder">
-                <h2>Placeholder</h2>
+            </div>
+            <div class="product" data-name="Shampoo" data-details="A placeholder for: placeholder placeholder placeholder placeholder placeholder placeholder" data-price="00.01">
+                <img src="Assets/Images/placeholder.png" alt="Shampoo">
+                <h2>Shampoo</h2>
                 <p>£00.01</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half"></i>
+                </div>
                 
-        </div>
-        <div class="product-list" id="product-list">
-            <div class="product" data-name="Placeholder" data-details="A placeholder for: placeholder placeholder placeholder placeholder placeholder placeholder" data-price="00.01">
-                <img src="Assets/Images/placeholder.png" alt="Placeholder">
-                <h2>Placeholder</h2>
+            </div>
+            <div class="product" data-name="Shampoo" data-details="A placeholder for: placeholder placeholder placeholder placeholder placeholder placeholder" data-price="00.01">
+                <img src="Assets/Images/placeholder.png" alt="Shampoo">
+                <h2>Shampoo</h2>
                 <p>£00.01</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half"></i>
+                </div>
                 
-        </div>
-        <div class="product-list" id="product-list">
-            <div class="product" data-name="Placeholder" data-details="A placeholder for: placeholder placeholder placeholder placeholder placeholder placeholder" data-price="00.01">
-                <img src="Assets/Images/placeholder.png" alt="Placeholder">
-                <h2>Placeholder</h2>
+            </div>
+            <div class="product" data-name="Shampoo" data-details="A placeholder for: placeholder placeholder placeholder placeholder placeholder placeholder" data-price="00.01">
+                <img src="Assets/Images/placeholder.png" alt="Shampoo">
+                <h2>Shampoo</h2>
                 <p>£00.01</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half"></i>
+                </div>
                 
-        </div>
-        <div class="product-list" id="product-list">
-            <div class="product" data-name="Placeholder" data-details="A placeholder for: placeholder placeholder placeholder placeholder placeholder placeholder" data-price="00.01">
-                <img src="Assets/Images/placeholder.png" alt="Placeholder">
-                <h2>Placeholder</h2>
+            </div>
+            <div class="product" data-name="Shampoo" data-details="A placeholder for: placeholder placeholder placeholder placeholder placeholder placeholder" data-price="00.01">
+                <img src="Assets/Images/placeholder.png" alt="Shampoo">
+                <h2>Shampoo</h2>
                 <p>£00.01</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half"></i>
+                </div>
                 
-        </div>
-        <!-- Dont add more than this - Trying to fix a bug (Cannot Figure it out yet) -->
-        <div class="product-list" id="product-list">
-            <div class="product" data-name="Placeholder" data-details="A placeholder for: placeholder placeholder placeholder placeholder placeholder placeholder" data-price="00.01">
-                <img src="Assets/Images/placeholder.png" alt="Placeholder">
-                <h2>Placeholder</h2>
+            </div>
+            <div class="product" data-name="Shampoo" data-details="A placeholder for: placeholder placeholder placeholder placeholder placeholder placeholder" data-price="00.01">
+                <img src="Assets/Images/placeholder.png" alt="Shampoo">
+                <h2>Shampoo</h2>
                 <p>£00.01</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half"></i>
+                </div>
                 
-        </div>
-        <div class="product-list" id="product-list">
-            <div class="product" data-name="Placeholder" data-details="A placeholder for: placeholder placeholder placeholder placeholder placeholder placeholder" data-price="00.01">
-                <img src="Assets/Images/placeholder.png" alt="Placeholder">
-                <h2>Placeholder</h2>
-                <p>£00.01</p>
-                
-        </div>
-        <div class="product-list" id="product-list">
-            <div class="product" data-name="Placeholder" data-details="A placeholder for: placeholder placeholder placeholder placeholder placeholder placeholder" data-price="00.01">
-                <img src="Assets/Images/placeholder.png" alt="Placeholder">
-                <h2>Placeholder</h2>
-                <p>£00.01</p>
-                
-        </div>
-        
+            </div>
             
-
-            
-            
+                
             
             <!-- Additional products can be added here -->
         </div>

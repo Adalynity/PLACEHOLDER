@@ -1,3 +1,17 @@
+function onHover()
+{
+    $("#logoImg").attr('src', 'Assets/Images/default_logo_white.png');
+}
+
+function offHover()
+{
+    $("#logoImg").attr('src', 'Assets/Images/default_logo.png');
+}
+
+
+document.querySelector('.hamburger').addEventListener('click', function() {
+    document.querySelector('.nav-links').classList.toggle('active');
+});
 
 $(document).ready(function() {
     var messageEle = document.querySelector('#messageArea');

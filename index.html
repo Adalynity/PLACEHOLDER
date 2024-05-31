@@ -9,34 +9,27 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
     
     <title>Main page</title>
 </head>
 <body>
-    
-  <div class="navbar" id="navbar">
-    <!-- Desktop Element -->
-    <a class="desktopImg" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
-      <img  src="Assets/Images/default_logo.png"id="logo">
-      <img  src="Assets/Images/default_logo_white.png"id="logo2">
-    </a>
-    <!-- <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" id="logo"><span id="initialLetter">R</span>EDS</a> -->
-    <a class="mobileImg" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
-      <img  src="Assets/Images/mobileLogo.png"id="logo">
+  <nav class="navbar">
+    <div class="logo">
+        <a>
+          <img id="logoImg" src="Assets/Images/default_logo.png" onmouseover="onHover();" onmouseout="offHover();">
+        </a>
+    </div>
+    <ul class="nav-links">
+        <li><a href="#locations"><i class="fas fa-map-marker-alt"></i> Locations</a></li>
+        <li><a href="#services"><i class="fas fa-concierge-bell"></i> Services</a></li>
+        <li><a href="Shop.html"><i class="fas fa-shopping-cart"></i> Shop</a></li>
+        <li><a href="#contact"><i class="fas fa-envelope"></i> Contact Us</a></li>
+    </ul>
+    <div class="hamburger"><i class="fas fa-bars"></i></div>
+  </nav>
 
-    </a>
-    <!-- Dekstop Element -->
-    <a class="fa fa-map-marker navbarButton locationBtn" id="navbarButton" aria-hidden="true" href="#Location"> Locations</a>
-    <a class="fa fa-scissors navbarButton serviceBtn" id="navbarButton " aria-hidden="true" href="#services"> Services</a>
-    <a class="fa fa-shopping-bag navbarButton shopBtn" id="navbarButton " aria-hidden="true" href="Shop.html"> Shop</a>  
-    <a class="fa fa-mobile navbarButton contactBtn" id="navbarButton " aria-hidden="true" href="contacts.html"> Contact Us</a>
-    <!-- Mobile Element -->
-    <a class="fa fa-map-marker navbarButton locationBtn1" id="navbarButton" aria-hidden="true" href="#Location"></a>
-    <a class="fa fa-scissors navbarButton serviceBtn1" id="navbarButton " aria-hidden="true" href="#services"></a>
-    <a class="fa fa-shopping-bag navbarButton shopBtn1" id="navbarButton " aria-hidden="true" href="Shop.html"></a>  
-    <a class="fa fa-mobile navbarButton contactBtn1" id="navbarButton " aria-hidden="true" href="contacts.html"></a>
-  </div>
   <main>
     <div class="Home scrollSnapY">
       <div class="container">
@@ -127,7 +120,7 @@
         </div>
       </div>
     </div> 
-
+    <section class="services">
     <div class="Services scrollSnapY">
       <div class="servicesContainer">
         <div class="contact-form">
@@ -203,7 +196,7 @@
               </div>
             </div>
           </div>
-        
+        </section>
         
       </div>
     </div>

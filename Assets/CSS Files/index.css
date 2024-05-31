@@ -39,8 +39,59 @@
   }
 
   /* Beginning of Navbar */
+.navbar {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  position: fixed;
+  padding: 10px 20px;
+  background: rgb(2,0,36);
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 65%, rgba(255,0,0,1) 100%) no-repeat;
+  color: white;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
 
-  #navbar{
+.navbar .logo {
+  font-size: 1.5em;
+  font-weight: bold;
+  padding-right: 15px;
+}
+#logoImg{
+  cursor: pointer;
+}
+.navbar .nav-links {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar .nav-links li {
+  margin: 0 10px;
+}
+
+.navbar .nav-links li a {
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.navbar .nav-links li a .fas {
+  margin-right: 8px;
+}
+.navbar .nav-links li a:hover{
+  color: red;
+}
+.navbar .hamburger {
+  display: none;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+  /* #navbar{
     position: relative;
     text-align: left;
     overflow: hidden;
@@ -89,7 +140,7 @@
   }
   #navbarButton:hover {
     color: #C20D0D;
-  }
+  } */
 
   /* End of Navbar */
 
@@ -358,6 +409,9 @@
     text-align: center;
     z-index:99999999999!important;
     font-size: 25px;
+  }
+  .submitButton:hover{
+    background-color: lightgrey;
   }
   .socialsemail{
     font-size: 25px;

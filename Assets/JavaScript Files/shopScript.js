@@ -1,3 +1,7 @@
+document.querySelector('.hamburger').addEventListener('click', function() {
+    document.querySelector('.nav-links').classList.toggle('active');
+});
+
 document.getElementById('search').addEventListener('input', function() {
     filterProducts(this.value.toLowerCase());
 });
