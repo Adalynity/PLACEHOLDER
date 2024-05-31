@@ -12,449 +12,432 @@
   --font: "Montserrat";
 }
 
-@media(max-width: 1920px) {
-  /* Hiding Mobile Elements */
-  .mobileImg, .locationBtn1,.serviceBtn1,.shopBtn1,.contactBtn1,.mobilemap{
-    display: none;
-    
-  }
 
-  .Home{
-    position: relative;
-    height: auto;
-    width: auto;
-    scroll-snap-align: start;
-  }
+
+
+.Home{
+  position: relative;
+  height: auto;
+  width: auto;
+  scroll-snap-align: start;
+}
+
+.scrollSnapY{
+  scroll-snap-type: y mandatory;
+}
+body{
+  overflow-x: hidden;
   
-  .scrollSnapY{
-    scroll-snap-type: y mandatory;
-  }
-  body{
-    background-color: var(--bodybackground);
-    font-family: "Montserrat", sans-serif;
-    font-size: 19px;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-  }
-
-  /* Beginning of Navbar */
-.navbar {
+  -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+            box-sizing: border-box;
+  background-color: var(--bodybackground);
+  font-family: "Montserrat", sans-serif;
+  font-size: 19px;
   display: flex;
-  justify-content: left;
-  align-items: center;
-  position: fixed;
-  padding: 10px 20px;
-  background: rgb(2,0,36);
-  background: rgb(2,0,36);
-  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 65%, rgba(255,0,0,1) 100%) no-repeat;
-  color: white;
-  top: 0;
-  width: 100%;
-  z-index: 1000;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Beginning of Navbar */
+.navbar {
+display: flex;
+justify-content: space;
+align-items: center;
+position: fixed;
+padding: 10px 20px;
+background: rgb(2,0,36);
+background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 65%, rgba(255,0,0,1) 100%) no-repeat;
+color: white;
+top: 0;
+width: 100%;
+z-index: 1000;
 }
 
 .navbar .logo {
-  font-size: 1.5em;
-  font-weight: bold;
-  padding-right: 15px;
+font-size: 1.5em;
+font-weight: bold;
+padding-right: 15px;
 }
 #logoImg{
-  cursor: pointer;
+cursor: pointer;
 }
 .navbar .nav-links {
-  display: flex;
-  list-style: none;
-  margin: 0;
-  padding: 0;
+display: flex;
+list-style: none;
+margin: 0;
+padding: 0;
 }
 
 .navbar .nav-links li {
-  margin: 0 10px;
+margin: 0 10px;
 }
 
 .navbar .nav-links li a {
-  color: white;
-  text-decoration: none;
-  display: flex;
-  align-items: center;
+color: white;
+text-decoration: none;
+display: flex;
+align-items: center;
 }
 
 .navbar .nav-links li a .fas {
-  margin-right: 8px;
+margin-right: 8px;
 }
 .navbar .nav-links li a:hover{
-  color: red;
+color: red;
 }
 .navbar .hamburger {
-  display: none;
-  font-size: 1.5em;
-  cursor: pointer;
+display: none;
+font-size: 1.5em;
+cursor: pointer;
+
 }
-  /* #navbar{
-    position: relative;
-    text-align: left;
-    overflow: hidden;
-    background: rgb(2,0,36);
-    background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 65%, rgba(255,0,0,1) 100%);
-    font-size: 30px;
-    
-    
-  }
+@media (max-width: 768px) {
   
-  
-  #navbar #logo{
-    position: relative;
-    opacity: 1;
-    
-    padding: 5px;
-    float: left;
-    color: #C20D0D;
-    text-decoration: underline;
-  }
-  #navbar #logo2{
-    position: absolute;
-    opacity: 0;
-    padding: 5px;
-    float: left;
-    color: #C20D0D;
-    text-decoration: underline;
-    left: 0px;
-  }
-  #navbar #logo:hover{
-    opacity: 0;
-  }
-  #navbar #logo2:hover{
-    opacity: 1;
-  }
-  #navbar .navbarButton{
-    position: relative;
-    top: 15px;
-    float: left;
-    display: left;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 15px;
-    text-decoration: none;
-  }
-  #navbarButton:hover {
-    color: #C20D0D;
-  } */
-
-  /* End of Navbar */
-
-  main{
-    flex-grow: 1;
-  }
-  .container{
-    display: flex;
-    flex-direction: row;
-    position: relative;
-    top: 30px;
-    
-  }
- 
-  .container2{
-    flex: 50%;
-    margin-right: 15px;
-  }
-  .mainPhoto{
-    position: relative;
-    height: 727px;
-    
-    flex:50%;
-    top: -6px;
-    margin-right: 15px;
-    
-    box-shadow:5px 4px 0 2px  #C20D0D, 6px 5px 5px 4px black;
-    
-  }
-  .grid-container{
-    position: relative;
-    top: -6px;
-    
-    height: auto;
-    
-  }
-  .grid-container .images{
-    position: relative;
-    top: 35px;
-    left: -5px;
-    display: flex;
-    margin-left: 10px;
-    
-  }
-  .grid-container .image{
-    position: relative;
-    width: auto;
-    box-shadow:5px 4px 0 2px  #C20D0D, 6px 5px 5px 4px black;
-    
-    margin-left: 15px;
-  }
-  .intro-desc{
-    background:white;
-    font-size: 23px;
-    margin-left: 20px;
-    height:442px;
-    box-shadow:5px 4px 0 2px  #C20D0D, 6px 5px 5px 4px black;
-  }
-  .column1{
-    position: relative;
-    /* box-shadow:5px 4px 0 2px  #C20D0D, 6px 5px 5px 4px black;*/
-  
-    height: auto;
-    flex: 50%;
-    
-    
-  }
-  .column2{
-    height: auto;
-    flex: 50%;
-    left: 4px;
-  }
- 
-  
-
-  /* Beginning of location section */
-
-  .Location{
-    position: relative;
-    height: auto;
-    width: auto;
-    margin-top: 400px;
-    bottom: 200px;
-  }
-
-  .desktopmap{
-    position: relative;
-    
-    margin-left: 20px;
-    box-shadow:5px 4px 0 2px  #C20D0D, 6px 5px 5px 4px black;
-  }
-
-  .mainLocationContainer{
-    display:flex;
-  
-  }
-  .mapContainer{
-    flex: 50%;
-  }
-  .aboutUsContainer{
-    
-    flex: 50%;
-    margin-right: 15px;
-    
-  }
-  .aboutUs{
-    background-color: white;
-    display: inline-block;
-    box-shadow:5px 4px 0 2px  #C20D0D, 6px 5px 5px 4px black;
-    height: auto;
-    
-  }
-  
-  .aboutusContainer2{
-    margin-top: 25px;
-    background-color: white;
-    display: flex;
-    box-shadow:5px 4px 0 2px  #C20D0D, 6px 5px 5px 4px black;
-    height: 75px;
-    text-align: center;
-  }
-  
-  .socialIconsContainer{
-    flex: 50%;
-    position: relative;
-    top: 20px;
-  }
-  .socialDetailsContainer{
-    flex: 50%;
-    position: relative;
-    top: 15px;
-  }
-  .locationIcon{
-    scale: 180%;
-    padding: 10px;
-    color: black;
-  }
-  .locationIcon:hover{
-    color: red;
-  }
-
-  .desctime{
-    display: flex;
-    flex-direction: row;
-  }
-  
-  .openingTimes{
-    text-align: center;
-    height: auto;
-    box-shadow:5px 4px 0 2px  #C20D0D, 6px 5px 5px 4px black;
-    background: white;
-    margin-right: 25px;
-    width: 425px;
-  }
-
-  /* End of Location Section */
-  
-  /* Beginning of Service section */
-  
-  .servicesContainer{
-    display: grid;
-    grid-template-columns: 50% 50%;
-  }
-  .contact-form{
-    display: flex;
-    flex: 50%;
-    flex-direction: column;
-    font-size: 28.8px;
-  }
-  .UserInputDetails{
-    background-color: white;
-    box-shadow:5px 4px 0 2px  #C20D0D, 6px 5px 5px 4px black;
-    flex: 50%;
-    display: flex;
-    margin-left: 20px;
-    width: 900px;
-    
-  }
-  .userMessage{
-    position: relative;
-    background-color: white;
-    box-shadow:5px 4px 0 2px  #C20D0D, 6px 5px 5px 4px black;
-    flex: 50%;
-    margin-top: 10px;
-    left: 20px;
-    height: 500px;
-    width: 900px;
-    justify-content: center;
-  }
-  .message{
-    width: 700px;
-    height: 400px;
-    resize: none;
-    font-size: 28.8px;
-    margin-left:95px;
-  }
-  .nameEmail{
-    flex: 50%;
-    margin-left: 20px;
-    margin-bottom: 10px;
-    margin-top: 10px;
-  }
-
-  .serviceDate{
-    flex: 50%;
-    margin-left: 20px;
-    margin-bottom: 10px;
-    margin-top: 10px;
-  }
-
-  .titleMessage{
-    margin-left: 400px;
-  }
-
-  .counter{
-    margin-left: 400px;
-  }
-
-  .serviceImages{
-    position: relative;
-    display: flex;
-    text-align: center;
-    
-  }
-
-  .serviceImages .imageDesc{
-    background: white;
-    
-    display: block;
-  }
-
-  .serviceImages .serviceImage{
-    position: relative;
-    
-  }
-
-  .serviceimageFlex1{
-    flex: 50%
-  }
-  
-  .serviceimageFlex2{
-    flex: 50%;
-  }
-  .imageContainer{
-    display: block;
-    box-shadow: 5px 4px 0 2px  #C20D0D, 6px 5px 5px 4px black;
-    top: 100px;
-    width: 273px;
-  }
-  .imagecontainer2{
-    position: relative;
-    top: 25px
-  }
-  .submitButton{
-    position: relative;
-    float: right;
-    left: 908px;
-    bottom: 80px;
-    width: 908px;
-    height: 80px;
-    background-color: white;
-    box-shadow: 5px 4px 0 2px  #C20D0D, 6px 5px 5px 4px black;
-    border: none;
-    color: black;
-    cursor: pointer;
-    text-align: center;
-    z-index:99999999999!important;
-    font-size: 25px;
-  }
-  .submitButton:hover{
-    background-color: lightgrey;
-  }
-  .socialsemail{
-    font-size: 25px;
-    color: black;
-  }
-  .socialsemail:hover{
-    color:red;
-  }
-  
-
-  /* End of Service section */
-
-  /* Beginning of Footer */
-
-  .footer-container{
-    text-align: center;
+  .navbar .nav-links {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      position: absolute;
+      
+      top: 100px;
+      left: 0;
+      background: rgb(2,0,36);
     background: rgb(2,0,36);
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 65%, rgba(255,0,0,1) 100%);
-    height: 100%;
-    overflow: auto;
-    margin-top: 15px;
   }
- 
-  .socials-container{
-    font-size: 35px;
+
+  .navbar .nav-links.active {
+      display: flex;
   }
-  .socials-container a{
-    color: white;
+
+  .navbar .hamburger {
+      display: block;
+      position: relative;
+      left: 280px;
   }
-  .links-container a{
-    color: white;
-  }
-  .socials-container a:hover{
-    color: #C20D0D;
-  }
-  .links-container a:hover{
-    color: #C20D0D;
-  }
-  .copyrightText{
-    color: white;
-  }
+}
+
+main{
+  flex-grow: 1;
+  position: relative;
+  top: 125px;
+}
+.container{
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  top: 30px;
   
-  /* End of Footer */
+}
+
+.container2{
+  flex: 50%;
+  margin-right: 15px;
+}
+.mainPhoto{
+  position: relative;
+  height: 727px;
+  
+  flex:50%;
+  top: -6px;
+  margin-right: 15px;
+  
+  box-shadow:5px 4px 0 2px  #C20D0D, 6px 5px 5px 4px black;
+  
+}
+.grid-container{
+  position: relative;
+  top: -6px;
+  
+  height: auto;
+  
+}
+.grid-container .images{
+  position: relative;
+  top: 35px;
+  left: -5px;
+  display: flex;
+  margin-left: 10px;
+  
+}
+.grid-container .image{
+  position: relative;
+  width: auto;
+  box-shadow:5px 4px 0 2px  #C20D0D, 6px 5px 5px 4px black;
+  
+  margin-left: 15px;
+}
+.intro-desc{
+  text-align: center;
+  background:white;
+  font-size: 23px;
+  margin-left: 20px;
+  height:500px;
+  box-shadow:5px 4px 0 2px  #C20D0D, 6px 5px 5px 4px black;
+}
+.column1{
+  position: relative;
+  /* box-shadow:5px 4px 0 2px  #C20D0D, 6px 5px 5px 4px black;*/
+
+  height: auto;
+  flex: 50%;
+  
+  
+}
+.column2{
+  height: auto;
+  flex: 50%;
+  left: 4px;
+}
+
+
+
+/* Beginning of location section */
+
+.Location{
+  position: relative;
+  height: auto;
+  width: auto;
+  margin-top: 400px;
+  bottom: 200px;
+}
+
+.desktopmap{
+  
+  position: relative;
+  margin-left: 15px;
+  box-shadow:5px 4px 0 2px  #C20D0D, 6px 5px 5px 4px black;
+}
+
+.mainLocationContainer{
+  display:flex;
+
+}
+.mapContainer{
+  flex: 50%;
+}
+.aboutUsContainer{
+  
+  flex: 50%;
+  margin-right: 15px;
+  
+}
+.aboutUs{
+  background-color: white;
+  display: inline-block;
+  box-shadow:5px 4px 0 2px  #C20D0D, 6px 5px 5px 4px black;
+  height: auto;
+  
+}
+
+.aboutusContainer2{
+  margin-top: 25px;
+  background-color: white;
+  display: flex;
+  box-shadow:5px 4px 0 2px  #C20D0D, 6px 5px 5px 4px black;
+  height: 75px;
+  text-align: center;
+}
+
+.socialIconsContainer{
+  flex: 50%;
+  position: relative;
+  top: 20px;
+}
+.socialDetailsContainer{
+  flex: 50%;
+  position: relative;
+  top: 15px;
+}
+.locationIcon{
+  scale: 180%;
+  padding: 10px;
+  color: black;
+}
+.locationIcon:hover{
+  color: red;
+}
+
+.desctime{
+  display: flex;
+  flex-direction: row;
+}
+
+.openingTimes{
+  text-align: center;
+  height: auto;
+  box-shadow:5px 4px 0 2px  #C20D0D, 6px 5px 5px 4px black;
+  background: white;
+  margin-right: 25px;
+  width: 425px;
+}
+
+/* End of Location Section */
+
+/* Beginning of Service section */
+
+.servicesContainer{
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.contact-form{
+  display: flex;
+  flex: 50%;
+  flex-direction: column;
+  font-size: 28.8px;
+}
+.UserInputDetails{
+  background-color: white;
+  box-shadow:5px 4px 0 2px  #C20D0D, 6px 5px 5px 4px black;
+  flex: 50%;
+  display: flex;
+  margin-left: 20px;
+  width: 825px;
+  
+}
+.userMessage{
+  position: relative;
+  background-color: white;
+  box-shadow:5px 4px 0 2px  #C20D0D, 6px 5px 5px 4px black;
+  flex: 50%;
+  margin-top: 10px;
+  left: 20px;
+  height: 500px;
+  width: 825px;
+  justify-content: center;
+}
+.message{
+  width: 700px;
+  height: 400px;
+  resize: none;
+  font-size: 28.8px;
+  margin-left:95px;
+}
+.nameEmail{
+  flex: 50%;
+  margin-left: 20px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.serviceDate{
+  flex: 50%;
+  margin-left: 20px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.titleMessage{
+  margin-left: 400px;
+}
+
+.counter{
+  margin-left: 400px;
+}
+
+.serviceImages{
+  position: relative;
+  display: flex;
+  text-align: center;
+  
+}
+
+.serviceImages .imageDesc{
+  background: white;
+  
+  display: block;
+}
+
+.serviceImages .serviceImage{
+  position: relative;
+  
+}
+
+.serviceimageFlex1{
+  flex: 50%
+}
+
+.serviceimageFlex2{
+  flex: 50%;
+}
+.imageContainer{
+  display: block;
+  box-shadow: 5px 4px 0 2px  #C20D0D, 6px 5px 5px 4px black;
+  top: 100px;
+  width: 273px;
+}
+.imagecontainer2{
+  position: relative;
+  top: 25px
+}
+.submitButton{
+  position: relative;
+  float: right;
+  left: 850px;
+  bottom: 80px;
+  width: 849px;
+  height: 80px;
+  background-color: white;
+  box-shadow: 5px 4px 0 2px  #C20D0D, 6px 5px 5px 4px black;
+  border: none;
+  color: black;
+  cursor: pointer;
+  text-align: center;
+  z-index:99999999999!important;
+  font-size: 25px;
+}
+.submitButton:hover{
+  background-color: lightgrey;
+}
+.socialsemail{
+  font-size: 25px;
+  color: black;
+}
+.socialsemail:hover{
+  color:red;
+}
+
+
+/* End of Service section */
+
+/* Beginning of Footer */
+
+.footer-container{
+  text-align: center;
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 65%, rgba(255,0,0,1) 100%);
+  height: 100%;
+  overflow: auto;
+  margin-top: 160px;
+}
+
+.socials-container{
+  font-size: 35px;
+}
+.socials-container a{
+  color: white;
+}
+.links-container a{
+  color: white;
+}
+.socials-container a:hover{
+  color: #C20D0D;
+}
+.links-container a:hover{
+  color: #C20D0D;
+}
+.copyrightText{
+  color: white;
+}
+
+/* End of Footer */
+@media(max-width: 1920px) {
+  .mobilemap{
+    display: none;
+
+  }
 }
 @media (min-width: 2560px) and (max-width: 2560px){
   .grid-container .images{
@@ -482,65 +465,17 @@
     scroll-snap-type: y mandatory;
   }
   body{
+    
+
     background-color: var(--bodybackground);
     font-size: 19px;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+
   }
+
   
-  .navbar{
-  display: flex;
-  justify-content: left;
-  align-items: center;
-  position: fixed;
-  padding: 10px 20px;
-  background: rgb(2,0,36);
-  background: rgb(2,0,36);
-  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 65%, rgba(255,0,0,1) 100%) no-repeat;
-  color: white;
-  top: 0;
-  width: 100%;
-  z-index: 1000;
-}
-
-.navbar .logo {
-  font-size: 1.5em;
-  font-weight: bold;
-  padding-right: 15px;
-}
-#logoImg{
-  cursor: pointer;
-}
-.navbar .nav-links {
-  display: flex;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.navbar .nav-links li {
-  margin: 0 10px;
-}
-
-.navbar .nav-links li a {
-  color: white;
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-}
-
-.navbar .nav-links li a .fas {
-  margin-right: 8px;
-}
-.navbar .nav-links li a:hover{
-  color: red;
-}
-.navbar .hamburger {
-  display: none;
-  font-size: 1.5em;
-  cursor: pointer;
-}
 
   
   /* for Mobile Element positioning */
@@ -698,7 +633,7 @@
     box-shadow:5px 4px 0 2px  #C20D0D, 6px 5px 5px 4px black;
     height: 75px;
     text-align: center;
-    width: 390px;
+    width: 30px;
     left: 20px;
   }
   .socialIconsContainer{
