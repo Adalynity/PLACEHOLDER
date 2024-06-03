@@ -13,9 +13,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  background: rgb(2,0,36);
-  background: rgb(2,0,36);
-  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 65%, rgba(255,0,0,1) 100%) no-repeat;
+ 
   
   color: white;
 }
@@ -130,13 +128,13 @@ header input {
 
 .cart {
   display: none;
-  position: absolute;
-  right: 0;
+  position: relative;
+
   background-color: white;
   color: black;
   border: 1px solid #ccc;
   width: 300px;
-  padding: 1rem;
+ 
   box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
 }
 
@@ -262,6 +260,21 @@ main {
     display: inline-block;
     margin-top: 1rem;
     right: 10px;
+  }
+ 
+  .search-container{
+    position: relative;
+    right:26px;
+  }
+  .product-list{
+    position: relative;
+    width: 100%;
+    
+    left: 64px;
+    
+  }
+  .product{
+    width: 250px;
   }
 }
 
