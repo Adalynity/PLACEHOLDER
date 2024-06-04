@@ -260,7 +260,7 @@ main{
   top: 15px;
 }
 .locationIcon{
-  scale: 180%;
+  
   padding: 10px;
   color: black;
 }
@@ -361,9 +361,12 @@ main{
 .serviceImages .serviceImage{
   position: relative;
   width: 273px;
-  height: 184px;
+  height: 190px;
 }
-
+.serviceImages .serviceImage img{
+  width: 273px;
+  height: 2px;
+}
 .serviceimageFlex1{
   flex: 50%
 }

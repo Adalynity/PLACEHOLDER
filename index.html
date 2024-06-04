@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://kit.fontawesome.com/5e432157c7.js" crossorigin="anonymous"></script>
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
     
     <title>Main page</title>
@@ -18,14 +19,15 @@
   <nav class="navbar">
     <div class="logo">
         <a>
-          <img id="logoImg" src="Assets/Images/default_logo.png" onmouseover="onHover();" onmouseout="offHover();">
+          <img id="logoImg" src="Assets/Images/default_logo.png" onmouseover="onHoverImg();" onmouseout="offHoverImg();">
         </a>
     </div>
     <ul class="nav-links">
-        <li><a href="#location"><i class="fas fa-map-marker-alt fa-spin"></i> Locations</a></li>
-        <li><a href="#services"><i class="fas fa-concierge-bell fa-spin"></i> Services</a></li>
-        <li><a href="Shop.html"><i class="fas fa-shopping-cart fa-spin"></i> Shop</a></li>
-        <li><a href="#contact"><i class="fas fa-envelope fa-spin"></i> Contact Us</a></li>
+      
+        <li><a onmouseover="onHoverLocation()" onmouseout="offHoverLocation()" href="#location"><i id="locationDot" class="fa-solid fa-location-dot"></i> &nbsp;Locations</a></li>
+        <li><a onmouseover="onHoverBell()" onmouseout="offHoverBell()" href="#services" ><i  id="bellConcierge" class="fa-solid fa-bell-concierge"></i></i> &nbsp;Services</a></li>
+        <li><a onmouseover="onHoverShop()" onmouseout="offHoverShop()"href="Shop.html"><i id="shoppingCart" class="fas fa-shopping-cart"></i> &nbsp;Shop</a></li>
+        <li><a onmouseover="onHoverMail()" onmouseout="offHoverMail()" href="#contact"><i id="mailIcon" class="fa-solid fa-envelope "></i> &nbsp; Contact Us</a></li>
     </ul>
     <div class="hamburger"><i id="hamburger" class="fas fa-bars"></i></div>
   </nav>
@@ -109,8 +111,8 @@
             </div>
             <div class="aboutusContainer2">
               <div class="socialIconsContainer">
-                <a class="fa fa-facebook-official locationIcon" aria-hidden="true" href="#Facebook"></a>
-                <a class="fa fa-instagram locationIcon" aria-hidden="true" href="#Instagram"></a>
+                <a class="fa-brands fa-facebook locationIcon" aria-hidden="true" href="#Facebook"></a>
+                <a class="fa fas-instagram locationIcon" aria-hidden="true" href="#Instagram"></a>
               </div>
               <div class="socialDetailsContainer">
                 <p class="socialsphone">0XXXX XXXXXX</p>
@@ -174,7 +176,7 @@
               </div>
               
               <div class="imageContainer imagecontainer2">
-                <img class="serviceImage" src="Assets/Images/placeholder.png">
+                <img class="serviceImage" src="Assets/Images/serviceImg2.jpg">
                 <span class="imageDesc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, itaque.</span>
               </div>
             </div>

@@ -6,6 +6,7 @@
     <title>Shopping Page</title>
     <link rel="stylesheet" href="Assets/CSS Files/shopstyles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://kit.fontawesome.com/5e432157c7.js" crossorigin="anonymous"></script>
 </head>
 <body>
     
@@ -15,10 +16,10 @@
                 <img src="Assets/Images/default_logo.png">
             </div>
             <ul class="nav-links">
-                <li><a href="#locations"><i class="fas fa-map-marker-alt"></i> Locations</a></li>
-                <li><a href="#services"><i class="fas fa-concierge-bell"></i> Services</a></li>
-                <li><a href="#shop"><i class="fas fa-shopping-cart"></i> Shop</a></li>
-                <li><a href="#contact"><i class="fas fa-envelope"></i> Contact Us</a></li>
+                <li><a onmouseover="onHoverLocation()" onmouseout="offHoverLocation()" href="#location"><i id="locationDot" class="fa-solid fa-location-dot"></i> &nbsp;Locations</a></li>
+                <li><a onmouseover="onHoverBell()" onmouseout="offHoverBell()" href="#services" ><i  id="bellConcierge" class="fa-solid fa-bell-concierge"></i></i> &nbsp;Services</a></li>
+                <li><a onmouseover="onHoverShop()" onmouseout="offHoverShop()"href="Shop.html"><i id="shoppingCart" class="fas fa-shopping-cart"></i> &nbsp;Shop</a></li>
+                <li><a onmouseover="onHoverMail()" onmouseout="offHoverMail()" href="#contact"><i id="mailIcon" class="fa-solid fa-envelope "></i> &nbsp; Contact Us</a></li>
             </ul>
             <div class="hamburger"><i id="hamburger" class="fas fa-bars"></i></div>
         </nav>
