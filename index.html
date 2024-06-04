@@ -23,22 +23,22 @@
         </a>
     </div>
     <ul class="nav-links">
-      
+        <li><a onmouseover="onHoverHome()" onmouseout="offHoverHome()" href="#home"><i id="homeIcon" class="fa-solid fa-house"></i>&nbsp;Home</a></li>
         <li><a onmouseover="onHoverLocation()" onmouseout="offHoverLocation()" href="#location"><i id="locationDot" class="fa-solid fa-location-dot"></i> &nbsp;Locations</a></li>
-        <li><a onmouseover="onHoverBell()" onmouseout="offHoverBell()" href="#services" ><i  id="bellConcierge" class="fa-solid fa-bell-concierge"></i></i> &nbsp;Services</a></li>
+        <li><a onmouseover="onHoverBell()" onmouseout="offHoverBell()" href="#services" ><i  id="bellConcierge" class="fa-solid fa-bell-concierge"></i> &nbsp;Services</a></li>
         <li><a onmouseover="onHoverShop()" onmouseout="offHoverShop()"href="Shop.html"><i id="shoppingCart" class="fas fa-shopping-cart"></i> &nbsp;Shop</a></li>
-        <li><a onmouseover="onHoverMail()" onmouseout="offHoverMail()" href="#contact"><i id="mailIcon" class="fa-solid fa-envelope "></i> &nbsp; Contact Us</a></li>
+        <li><a onmouseover="onHoverMail()" onmouseout="offHoverMail()" href="contacts.html"><i id="mailIcon" class="fa-solid fa-envelope "></i> &nbsp; Contact Us</a></li>
     </ul>
     <div class="hamburger"><i id="hamburger" class="fas fa-bars"></i></div>
   </nav>
 
   <main>
-    <div class="Home scrollSnapY">
+    <div class="Home" id="home">
       <div class="container">
           <div class="container2">
             <div class="grid-container">
               <p class="intro-desc">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit, iusto. Minima ipsam rerum animi vero, vel placeat explicabo officia voluptas non atque cumque accusantium sint, neque veniam, ullam esse voluptatibus perspiciatis fugiat sequi recusandae. Dicta assumenda illum consequuntur officiis nisi. Sapiente officiis minima dicta laboriosam facere quae earum soluta consectetur et aut fuga, culpa eos voluptatum natus labore nostrum iure, cupiditate eius consequatur dolore! Velit dolorum similique pariatur ipsam possimus? Eligendi odit sint hic? Alias vitae quibusdam at neque blanditiis voluptatibus corrupti adipisci aliquam unde dolore, voluptas consequuntur eos laboriosam quis harum nobis? Tempora, dolore aliquid esse deleniti eaque rem!
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis repudiandae est itaque neque deleniti saepe natus commodi animi, atque iste necessitatibus repellat voluptates unde recusandae quae laboriosam veritatis fugit qui laborum numquam maxime alias doloremque. Voluptate non eaque nostrum consectetur? Nesciunt, vitae accusantium reprehenderit dignissimos beatae itaque in recusandae dolores.
                 
               </p>
               <div class="images">
@@ -100,7 +100,7 @@
             <div class="openingTimesMobile">
 
             </div>
-            <div class="aboutUs">
+            <div id="aboutUs" class="aboutUs">
               <p class="aboutUsText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum magnam, labore maiores aspernatur suscipit impedit repudiandae obcaecati sed veritatis incidunt assumenda autem quos officia dolorem!</p>
             </div>
           </div>
@@ -111,8 +111,15 @@
             </div>
             <div class="aboutusContainer2">
               <div class="socialIconsContainer">
-                <a class="fa-brands fa-facebook locationIcon" aria-hidden="true" href="#Facebook"></a>
-                <a class="fa fas-instagram locationIcon" aria-hidden="true" href="#Instagram"></a>
+                <div class="socialIconsContainer2">
+                <a class=" fa-brands fa-facebook-official facebookIcon" aria-hidden="true" href="#Facebook"></a>
+                <a class="fa-brands fa-instagram instagramIcon" aria-hidden="true" href="#Instagram"></a>
+                </div>
+              </div>
+              <div class="address">
+                8 Frazer Street <br>
+                Largs<br>
+                KA30 9HP
               </div>
               <div class="socialDetailsContainer">
                 <p class="socialsphone">0XXXX XXXXXX</p>
@@ -125,9 +132,9 @@
         </div>
       </div>
     </div> 
-    <section class="services">
-    <div class="Services scrollSnapY">
-      <div class="servicesContainer">
+    
+    
+      <div class="servicesContainer" id="services">
         <div class="contact-form">
           
           <form>
@@ -204,29 +211,30 @@
         </section>
         
       </div>
-    </div>
+    
+      <footer>
+        <div class="footer-container">
+          <div class="socials-container">
+            <a class="fa fa-facebook-official" aria-hidden="true" href="#Facebook"></a>
+           <!-- <a class="fa fa-twitter" aria-hidden="true" href="#Twitter"></a>
+            <a class="fa fa-linkedin-square" aria-hidden="true" href="#Linkedin"></a> -->
+            <a class="fa fa-instagram" aria-hidden="true" href="#Instagram"></a>
+            
+          </div>
+          <div class="links-container">
+            <a class="" aria-hidden="true" href="#Home">Home</a>
+            <a class="" aria-hidden="true" href="#Contacts">About</a>
+            <a class="" aria-hidden="true" href="#Team">Team</a>
+            <a class="" aria-hidden="true" href="#Contact">Contact Us</a>
+          </div>
+          <div class="copyright" >
+            <p class="fa fa-copyright copyrightText" aria-hidden="true" >2024 Adalyn Taylor | Darius Takacs</p>
+          </div>
+          
+        </div> 
+      </footer>
   </main>
-  <footer>
-    <div class="footer-container">
-      <div class="socials-container">
-        <a class="fa fa-facebook-official" aria-hidden="true" href="#Facebook"></a>
-       <!-- <a class="fa fa-twitter" aria-hidden="true" href="#Twitter"></a>
-        <a class="fa fa-linkedin-square" aria-hidden="true" href="#Linkedin"></a> -->
-        <a class="fa fa-instagram" aria-hidden="true" href="#Instagram"></a>
-        
-      </div>
-      <div class="links-container">
-        <a class="" aria-hidden="true" href="#Home">Home</a>
-        <a class="" aria-hidden="true" href="#Contacts">About</a>
-        <a class="" aria-hidden="true" href="#Team">Team</a>
-        <a class="" aria-hidden="true" href="#Contact">Contact Us</a>
-      </div>
-      <div class="copyright" >
-        <p class="fa fa-copyright copyrightText" aria-hidden="true" >2024 Adalyn Taylor | Darius Takacs</p>
-      </div>
-      
-    </div> 
-  </footer>
+  
 
 
 <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/vef91dfe02fce4ee0ad053f6de4f175db1715022073587" integrity="sha512-sDIX0kl85v1Cl5tu4WGLZCpH/dV9OHbA4YlKCuCiMmOQIk4buzoYDZSFj+TvC71mOBLh8CDC/REgE0GX0xcbjA==" data-cf-beacon='{"rayId":"88b03bfa39cb9486","r":1,"version":"2024.4.1","token":"9f8851f4638f4ffbaa84ffa4f82803ac"}' crossorigin="anonymous"></script>

@@ -12,14 +12,25 @@
   --font: "Montserrat";
 }
 
+html,body{
+  
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  flex-shrink: 0;
+}
+
+
 
 
 
 .Home{
+  padding-top: 150px;
   position: relative;
   height: auto;
   width: auto;
   scroll-snap-align: start;
+  bottom: 150px;
 }
 
 
@@ -35,15 +46,9 @@ body{
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  height: 800px;
 }
-.body img{
-  transition-property: all;
-  transition-duration: 0.3s;
-  transition-timing-function: ease;
-}
-.body img:hover{
-  transform: scale(3);
-}
+
 
 /* Beginning of Navbar */
 .navbar {
@@ -58,7 +63,7 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,0,0,1) 0%, rgba(0,0
 color: white;
 top: 0;
 width: 100%;
-z-index: 1000;
+z-index: 9999999999999999999999999999;
 }
 
 .navbar .logo {
@@ -88,6 +93,8 @@ margin: 0 10px;
 .navbar .nav-links li a {
 color: white;
 text-decoration: none;
+font-size: 19px;
+font-family: var(--font);
 display: flex;
 align-items: center;
 }
@@ -104,37 +111,12 @@ font-size: 1.5em;
 cursor: pointer;
 
 }
-@media (max-width: 768px) {
-  
-  .navbar .nav-links {
-      display: none;
-      flex-direction: column;
-      width: 100%;
-      position: absolute;
-      
-      top: 100px;
-      left: 0;
-      background: rgb(2,0,36);
-    background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 65%, rgba(255,0,0,1) 100%);
-  }
-
-  .navbar .nav-links.active {
-      display: flex;
-  }
-
-  .navbar .hamburger {
-      display: block;
-      position: fixed;
-      
-      right: 0;
-  }
-}
 
 main{
   flex-grow: 1;
   position: relative;
-  top: 125px;
+  top: 250px;
+ 
 }
 .container{
   display: flex;
@@ -155,7 +137,7 @@ main{
   flex:50%;
   top: -6px;
   margin-right: 15px;
-  
+  width: 10px;
   box-shadow:5px 4px 0 2px  #C20D0D, 6px 3px 6px 2px black;
   
 }
@@ -234,7 +216,8 @@ main{
   height: auto;
   width: auto;
   margin-top: 400px;
-  bottom: 200px;
+  bottom: 500px;
+  padding-top: 150px;
 }
 
 .desktopmap{
@@ -282,17 +265,28 @@ main{
 .socialDetailsContainer{
   flex: 50%;
   position: relative;
-  top: 15px;
+  
 }
 .locationIcon{
+  position: relative;
+  scale: 3;
+  top: 5px;
   
-  padding: 10px;
   color: black;
 }
 .locationIcon:hover{
   color: red;
 }
 
+.facebookIcon{
+  position: relative;
+  right: 50px;
+}
+.instragramIcon{
+  position: relative;
+  left: 50px;
+
+}
 .desctime{
   display: flex;
   flex-direction: row;
@@ -307,13 +301,23 @@ main{
   width: 425px;
 }
 
+.address{
+  width: 250px;
+  font-size: 19px;
+}
+
 /* End of Location Section */
 
 /* Beginning of Service section */
 
 .servicesContainer{
+  position: relative;
   display: grid;
   grid-template-columns: 50% 50%;
+  
+  padding-top: 150px;
+  bottom: 500px;
+  width: px;
 }
 .contact-form{
   display: flex;
@@ -327,7 +331,7 @@ main{
   flex: 50%;
   display: flex;
   margin-left: 20px;
-  width: 915px;
+  width: 900px;
   
 }
 .userMessage{
@@ -338,7 +342,7 @@ main{
   margin-top: 10px;
   left: 20px;
   height: 500px;
-  width: 915px;
+  width: 900px;
   justify-content: center;
 }
 .message{
@@ -374,6 +378,7 @@ main{
   position: relative;
   display: flex;
   text-align: center;
+  left: 29px
   
 }
 
@@ -421,9 +426,9 @@ main{
 .submitButton{
   position: relative;
   float: right;
-  left: 912px;
+  left: 939px;
   bottom: 80px;
-  width: 913px;
+  width: 910px;
   height: 80px;
   background-color: white;
   box-shadow: 5px 4px 0 2px  #C20D0D, 6px 5px 2px 4px black;
@@ -431,7 +436,7 @@ main{
   color: black;
   cursor: pointer;
   text-align: center;
-  z-index:99999999999!important;
+  z-index:1000;
   font-size: 25px;
 }
 .submitButton:hover{
@@ -451,12 +456,17 @@ main{
 /* Beginning of Footer */
 
 .footer-container{
+  position: relative;
+  bottom:0;
   text-align: center;
   background: rgb(2,0,36);
   background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 65%, rgba(255,0,0,1) 100%);
-  height: 100%;
-  overflow: auto;
-  margin-top: 160px;
+  width: auto;
+  
+  
+  
+  z-index: 1000!important;
+  
 }
 
 .socials-container{
@@ -467,6 +477,7 @@ main{
 }
 .links-container a{
   color: white;
+  
 }
 .socials-container a:hover{
   color: #C20D0D;
@@ -492,11 +503,32 @@ main{
   }
 
 }
-@media screen and (max-width: 481px){
-  *{
-    
+@media screen and (max-width: 768px){
+    .navbar .nav-links {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      position: absolute;
+      
+      top: 100px;
+      left: 0;
+      background: rgb(2,0,36);
+      background: rgb(2,0,36);
+      background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 65%, rgba(255,0,0,1) 100%);
   }
-  .image, .desktopmap{
+
+  .navbar .nav-links.active {
+      display: flex;
+  }
+
+  .navbar .hamburger {
+      display: block;
+      position: fixed;
+      
+      left: 375px;
+  }
+
+  .image, .desktopmap, .serviceImages, #aboutUs, .aboutUsText{
     display:none;
   }
   
@@ -511,7 +543,8 @@ main{
   
  
   body{
-    
+    position: relative;
+    right: 3px;
     overflow-x: hidden;
   
     -webkit-box-sizing: border-box;
@@ -600,7 +633,7 @@ main{
     font-size: 18px;
     top: 430px;
     box-shadow:5px 4px 0 2px  #C20D0D, 6px 3px 6px 2px black;
-    height: 400px;
+    height: 500px;
     left: -4px;
   }
 
@@ -613,11 +646,14 @@ main{
     overflow: auto;
   }
   
+  .servicesContainer{
+    top: -90px;
+  }
   
   .mobilemap{
     display:block;
     position: relative;
-    top: 285px;
+    top: 60px;
     left: 16px;
     box-shadow:5px 4px 0 2px  #C20D0D, 6px 3px 6px 2px black;
   }
@@ -642,6 +678,7 @@ main{
     color: white;
   }
   .mainLocationContainer{
+    
     display:flex;
     flex-direction: column;
   
@@ -649,7 +686,7 @@ main{
   
   .aboutUsContainer{
     position: relative;
-    top: 315px;
+    top: 90px;
   }
   .desctime{
     text-align: left;
@@ -657,7 +694,11 @@ main{
     height: 400px;
   }
   .openingTimes{
-    text-align: left;
+    position: relative;
+    font-size: 10px;
+    top: 120px;
+    width:400px;
+    left: 19px;
   }
   .aboutUs{
     position: relative;
@@ -672,7 +713,7 @@ main{
   }
   .aboutusContainer2{
     position: relative;
-    top: -925px;
+    bottom: 430px;
     
     background-color: white;
     display: flex;
@@ -683,14 +724,28 @@ main{
     left: 17px;
   }
   .socialIconsContainer{
-    width: 400px;
+    display: none;
   }
   .socialDetailsContainer{
     width: 400px;
   }
   .locationIcon{
+    
+    width: 20px;
+    height: 20px;
+    border: black 5px solid;
+    scale: 2;
     color: black;
     display: block;
+  }
+  .facebookIcon{
+    position: absolute;
+    
+  }
+  .instragramIcon{
+    position: absolute;
+    
+    
   }
   .UserInputDetails{
     background-color: white;
@@ -705,4 +760,50 @@ main{
   .serviceDate{
     flex:50%;
   }
+  .UserInputDetails{
+    position: relative;
+    flex-direction: column;
+    bottom: 100px;
+    width: 400px;
+  }
+  .userMessage{
+    top: 275px;
+    width: 400px;
+    height: 400px;
+  }
+  .message{
+    position: relative;
+    right: 55px;
+    width: 325px;
+    height: 300px;
+    bottom: 300px;
+  }
+  .titleMessage{
+    position: relative;
+    right: 270px;
+    bottom: 310px;
+  }
+  .counter{
+    position: relative;
+    right: 245px;
+    bottom: 305px;
+  }
+  .submitButton{
+    position: relative;
+    top: 300px;
+    width: 400px;
+    left: 205px;
+  }
+  .footer-container{
+    position: relative;
+    bottom: 0;
+    width: auto;
+    
+    overflow: auto;
+    top: 600px;
+    height: 100px;
+  }
 }
+
+
+
