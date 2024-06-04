@@ -74,6 +74,24 @@ function onHoverMail(){
         document.getElementById('mailIcon').classList.add('fa-beat-fade');
     }
 }
+
+function onHoverHome(){
+    if(document.getElementById('homeIcon').classList.contains('fa-beat')){
+        
+    }
+    else{
+        document.getElementById('homeIcon').classList.add('fa-beat');
+    }
+}
+
+function offHoverHome(){
+    if(document.getElementById('homeIcon').classList.contains('fa-beat')){
+        document.getElementById('homeIcon').classList.remove('fa-beat');
+    }
+    else{
+        
+    }
+}
 // End of animations
 
 document.querySelector('.hamburger').addEventListener('click', function() {
