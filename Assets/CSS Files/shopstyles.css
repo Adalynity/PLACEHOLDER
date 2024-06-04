@@ -59,12 +59,17 @@ body {
       position: absolute;
       top: 60px;
       left: 0;
-      background-color: #333;
+      background: rgb(2,0,36);
+      background: rgb(2,0,36);
+      background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 65%, rgba(255,0,0,1) 100%);
   }
 
   .navbar .nav-links.active {
+      top: 100px;
       display: flex;
-  }
+      height: 95px;
+      font-size: 20px;
+      }
 
   .navbar .hamburger {
       display: block;
@@ -169,6 +174,8 @@ main {
   flex-wrap: wrap;
   gap: 1rem;
   justify-content: center;
+  
+  margin: 0;
 }
 
 .product {
@@ -269,12 +276,18 @@ main {
   .product-list{
     position: relative;
     width: 100%;
-    
-    left: 64px;
+    left: 80px;
+    margin: 0
     
   }
   .product{
     width: 250px;
+  }
+  .cart-container {
+    position: relative;
+    display: inline-block;
+    margin-top: 1rem;
+    left: 0px;
   }
 }
 

@@ -11,6 +11,14 @@ function offHover()
 
 document.querySelector('.hamburger').addEventListener('click', function() {
     document.querySelector('.nav-links').classList.toggle('active');
+    if(document.getElementById('hamburger').classList.contains('fa-bars')){
+        document.getElementById('hamburger').classList.add('fa-times');
+        document.getElementById('hamburger').classList.remove('fa-bars');
+    }
+    else{
+        document.getElementById('hamburger').classList.add('fa-bars');
+        document.getElementById('hamburger').classList.remove('fa-times');
+    }
 });
 
 $(document).ready(function() {
