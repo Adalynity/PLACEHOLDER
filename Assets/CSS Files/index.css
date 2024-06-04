@@ -36,6 +36,14 @@ body{
   flex-direction: column;
   min-height: 100vh;
 }
+.body img{
+  transition-property: all;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+}
+.body img:hover{
+  transform: scale(3);
+}
 
 /* Beginning of Navbar */
 .navbar {
@@ -172,7 +180,17 @@ main{
   box-shadow:5px 4px 0 2px  #C20D0D, 6px 3px 6px 2px black;
   
   margin-left: 15px;
+
+  transition-property: all;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
 }
+
+.grid-container .image:hover{
+  transform: scale(1.5);
+  z-index: 9999999;
+}
+
 .intro-desc{
   text-align: center;
   background:white;
@@ -198,6 +216,13 @@ main{
 .images .image{
   width: 400px;
   height: 400px;
+  transition-property: all;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+}
+.images .image:hover{
+  transform: scale(1.5);
+  z-index: 999999;
 }
 
 
@@ -362,11 +387,20 @@ main{
   position: relative;
   width: 273px;
   height: 190px;
+  transition-property: all;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+}
+.serviceImages .serviceImage:hover{
+  transform: scale(2.5);
+  z-index: 9999999999999;
+  border: black solid 2px;
 }
 .serviceImages .serviceImage img{
   width: 273px;
   height: 2px;
 }
+
 .serviceimageFlex1{
   flex: 50%
 }
