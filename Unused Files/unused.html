@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Page</title>
+    <link rel="stylesheet" href="Assets/CSS Files/shopstyles2.css">
+    
+</head>
+<body>
+    <div class="search-bar">
+        <input type="text" id="search-input" placeholder="Search for products...">
+        <button id="search-button">Search</button>
+        <button id="clear-button">Clear</button>
+    </div>
+    <div class="products" id="product-list">
+        <div class="product-list flex-start" id="product-list">
+            <div class="product" data-name="Shampoo" data-details="A placeholder for: placeholder placeholder placeholder placeholder placeholder placeholder" data-price="00.01">
+                <img src="Assets/Images/placeholder.png" alt="Shampoo">
+                <h2>Shampoo</h2>
+                <p>£00.01</p>
+                
+            </div>
+    </div>
+    <div class="cart" id="cart">
+        <h3>Cart</h3>
+        <div id="cart-items"></div>
+        <button id="pay-button">Pay</button>
+    </div>
+    <div class="modal" id="product-modal">
+        <span class="modal-close" id="modal-close">X</span>
+        <img id="modal-image" src="" alt="">
+        <h2 id="modal-name"></h2>
+        <p id="modal-description"></p>
+        <p id="modal-price"></p>
+        <button id="modal-add-to-cart">Add to Cart</button>
+    </div>
+    <div class="overlay" id="overlay"></div>
+
+    <script src="Assets/JavaScript Files/shopScript2.js"></script>
+</body>
+</html>
